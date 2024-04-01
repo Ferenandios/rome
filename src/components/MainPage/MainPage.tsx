@@ -1,9 +1,10 @@
 import { FC } from "react";
+import Header from "../Header/Header";
 
 const MainPage: FC = (): JSX.Element => {
   return (
     <>
-      <div className="bg-lime-200">works!</div>
+      <Header />
     </>
   );
 };
