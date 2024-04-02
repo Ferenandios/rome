@@ -1,6 +1,7 @@
 export interface IService {
   id: number;
   title: string;
+  image: string;
 }
 
 export interface IState {
