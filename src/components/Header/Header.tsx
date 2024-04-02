@@ -1,13 +1,13 @@
 import { FC } from "react";
-import Logo from "./Logo/Logo";
+import Burger from "./Burger/Burger";
 
 const Header: FC = (): JSX.Element => {
   return (
     <>
       <header>
-        <div className="container mx-auto px-[16px]">
-          <div className="flex h-[100px] bg-lime-200">
-            <Logo />
+        <div className="container">
+          <div className="flex h-[50px] bg-lime-200">
+            <Burger />
           </div>
         </div>
       </header>
