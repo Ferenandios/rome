@@ -10,3 +10,17 @@ export interface IState {
   placeholder: string;
   services: IService[];
 }
+
+export interface IFooterLinksText {
+  text: string;
+}
+
+export interface IFooterLinksStyles {
+  text: "left" | "right";
+}
+
+export interface IFooterLinksList {
+  title: string;
+  text: IFooterLinksText[];
+  styles: IFooterLinksStyles;
+}
