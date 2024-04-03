@@ -25,3 +25,13 @@ export interface IFooterLinksList {
   text: IFooterLinksText[];
   styles: IFooterLinksStyles;
 }
+
+export interface ICrumbText {
+  text: string;
+  active: boolean;
+}
+
+export interface ICrumb {
+  title: string;
+  text: ICrumbText[];
+}
