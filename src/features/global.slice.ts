@@ -24,6 +24,7 @@ const initialState: IState = {
     { id: 2, title: "Изготовление металлоконструкций", image: serviceImage2 },
     { id: 3, title: "Гибка металла", image: serviceImage3 },
   ],
+  burgerIsOpen: false,
 };
 
 const globalSlice = createSlice({
@@ -39,8 +40,12 @@ const globalSlice = createSlice({
         state.services[Math.floor(Math.random() * state.services.length)];
       state.placeholder = randomService.title;
     },
+    toggleBurgerIsOpen: (state) => {
+      state.burgerIsOpen = !state.burgerIsOpen;
+    },
   },
 });
 
 export default globalSlice.reducer;
-export const { setSearch, setSearchPlaceholder } = globalSlice.actions;
+export const { setSearch, setSearchPlaceholder, toggleBurgerIsOpen } =
+  globalSlice.actions;
