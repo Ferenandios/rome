@@ -11,7 +11,7 @@ const Info: FC = (): JSX.Element => {
         { text: "Каталог оборудования" },
         { text: "Обратная связь" },
       ],
-      styles: [{ text: "left" }],
+      styles: { text: "left" },
     },
     {
       title: "Контакты",
@@ -21,14 +21,19 @@ const Info: FC = (): JSX.Element => {
         { text: "21-48-40" },
         { text: "remiksnv@yandex.ru" },
       ],
-      styles: [{ text: "right" }],
+      styles: { text: "right" },
     },
   ];
   return (
     <>
-      <div className="flex">
-        {linksList.map((links) => (
-          <Links title={links.title} text={links.text} />
+      <div className="flex justify-between">
+        {linksList.map((links, index) => (
+          <Links
+            key={index}
+            title={links.title}
+            text={links.text}
+            styles={links.styles}
+          />
         ))}
       </div>
     </>
