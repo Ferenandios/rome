@@ -9,6 +9,7 @@ export interface IState {
   search: string;
   placeholder: string;
   services: IService[];
+  burgerIsOpen: boolean;
 }
 
 export interface IFooterLinksText {
