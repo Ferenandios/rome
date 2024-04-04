@@ -6,7 +6,7 @@ import Text from "./Text/Text";
 const Crumb: FC<{ crumb: ICrumb }> = ({ crumb }): JSX.Element => {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col pl-[30px] first:pt-[40px]">
         <Title title={crumb.title} />
         <div className="flex flex-col">
           {crumb.text.map((text, index) => (
