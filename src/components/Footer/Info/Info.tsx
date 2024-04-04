@@ -1,8 +1,12 @@
 import { FC } from "react";
 import Links from "./Links/Links";
 import { type IFooterLinksList } from "../../../types/types";
+import { useAppSelector } from "../../../hooks";
 
 const Info: FC = (): JSX.Element => {
+  const { contacts } = useAppSelector((state) => state.global);
+  const generateLinksListText = (): { text: string }[] =>
+    contacts.phones.concat(contacts.emails).map((e) => ({ text: e }));
   const linksList: IFooterLinksList[] = [
     {
       title: "Категории",
@@ -15,12 +19,7 @@ const Info: FC = (): JSX.Element => {
     },
     {
       title: "Контакты",
-      text: [
-        { text: "+7 (346) 667-16-91" },
-        { text: "21-48-48" },
-        { text: "21-48-40" },
-        { text: "remiksnv@yandex.ru" },
-      ],
+      text: generateLinksListText(),
       styles: { text: "right" },
     },
   ];
