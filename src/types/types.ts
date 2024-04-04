@@ -4,12 +4,18 @@ export interface IService {
   image: string;
 }
 
+interface IContacts {
+  phones: string[];
+  emails: string[];
+}
+
 export interface IState {
   showedPage: "main" | "catalog";
   search: string;
   placeholder: string;
   services: IService[];
   burgerIsOpen: boolean;
+  contacts: IContacts;
 }
 
 export interface IFooterLinksText {
@@ -24,14 +30,4 @@ export interface IFooterLinksList {
   title: string;
   text: IFooterLinksText[];
   styles: IFooterLinksStyles;
-}
-
-export interface ICrumbText {
-  text: string;
-  active: boolean;
-}
-
-export interface ICrumb {
-  title: string;
-  text: ICrumbText[];
 }
