@@ -29,6 +29,7 @@ const initialState: IState = {
     phones: ["+73466671691", "214848", "214840"],
     emails: ["remiksnv@yandex.ru"],
   },
+  companyName: "ООО «РЕМИКС»",
 };
 
 const globalSlice = createSlice({
