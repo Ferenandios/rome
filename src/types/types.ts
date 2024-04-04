@@ -16,6 +16,7 @@ export interface IState {
   services: IService[];
   burgerIsOpen: boolean;
   contacts: IContacts;
+  companyName: string;
 }
 
 export interface IFooterLinksText {
