@@ -1,11 +1,14 @@
 import { FC } from "react";
+import { useAppSelector } from "../../../hooks";
 
 const Copyright: FC = (): JSX.Element => {
+  const { companyName } = useAppSelector((state) => state.global);
+  const year = new Date().getFullYear();
   return (
     <>
       <div className="flex justify-center mt-[16px]">
         <span className="font-sans font-semibold text-[12px]">
-          &copy; 2024 ООО «РЕМИКС»
+          &copy; {year} {companyName}
         </span>
       </div>
     </>
