@@ -7,7 +7,7 @@ import serviceImage2 from "/src/assets/Services/2.jpg";
 import serviceImage3 from "/src/assets/Services/3.jpg";
 
 const initialState: IState = {
-  showedPage: "main",
+  showedPage: "catalog",
   search: "",
   placeholder: "",
   services: [
