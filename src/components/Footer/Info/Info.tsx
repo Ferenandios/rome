@@ -1,28 +1,41 @@
 import { FC } from "react";
-import Links from "./Links/Links";
-import { type IFooterLinksList } from "../../../types/types";
-import { useAppSelector } from "../../../hooks";
 import { titleType } from "../../../types/Footer/types";
-import Items from "./Links/Items/Items";
+import Links from "./Links/Links";
+import { useAppSelector } from "../../../hooks";
+import Title from "./Title/Title";
 
 const Info: FC = (): JSX.Element => {
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
-  // ! DO UI FOR FOOTER IN FOOTER.SLICE.TS
   const { categories, contacts } = useAppSelector((state) => state.footer);
   const titles: titleType[] = ["Категории", "Контакты"];
   return (
     <>
       <div className="flex justify-between">
-        {titles.map((title) => (<Items  />))}
+        {titles.map((title, index) => (
+          <div
+            className={`${
+              title === "Контакты" && "text-right"
+            } flex flex-col gap-[4px]`}
+            key={index}
+          >
+            <Title title={title} />
+            <div>
+              {title === "Категории" && (
+                <>
+                  {categories.map((category) => (
+                    <Links key={category.id} element={category} />
+                  ))}
+                </>
+              )}
+              {title === "Контакты" && (
+                <>
+                  {contacts.map((contact) => (
+                    <Links key={contact.id} element={contact} />
+                  ))}
+                </>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
