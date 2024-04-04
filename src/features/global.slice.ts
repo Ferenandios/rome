@@ -25,6 +25,10 @@ const initialState: IState = {
     { id: 3, title: "Гибка металла", image: serviceImage3 },
   ],
   burgerIsOpen: false,
+  contacts: {
+    phones: ["+73466671691", "214848", "214840"],
+    emails: ["remiksnv@yandex.ru"],
+  },
 };
 
 const globalSlice = createSlice({
