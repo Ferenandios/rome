@@ -5,7 +5,7 @@ export interface IService {
 }
 
 export interface IState {
-  showedPage: "main";
+  showedPage: "main" | "catalog";
   search: string;
   placeholder: string;
   services: IService[];
