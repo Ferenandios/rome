@@ -36,15 +36,15 @@ const Burger: FC = (): JSX.Element => {
           rounded
         />
       </div>
-      {burgerIsOpen && (
-        <>
-          <nav className="fixed z-10 top-0 left-0 touch-none flex flex-col w-screen h-screen bg-white">
-            {crumbs.map((crumb, index) => (
-              <Crumb key={index} crumb={crumb} />
-            ))}
-          </nav>
-        </>
-      )}
+      <nav
+        className={`fixed z-10 top-0 left-0 touch-none flex flex-col ${
+          burgerIsOpen ? "w-screen" : "w-0"
+        } h-screen bg-white gap-[8px] overflow-hidden origin-right duration-500`}
+      >
+        {crumbs.map((crumb, index) => (
+          <Crumb key={index} crumb={crumb} />
+        ))}
+      </nav>
     </>
   );
 };
