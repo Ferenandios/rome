@@ -1,14 +1,10 @@
 import { FC } from "react";
 
 const Title: FC<{ title: string }> = ({ title }) => {
-  // ! DO TITLE STYLES
-  // ! DO TITLE STYLES
-  // ! DO TITLE STYLES
-  // ! DO TITLE STYLES
   return (
     <>
-      <div>
-        <h3>{title}</h3>
+      <div className="w-[calc(100vw-34px)]">
+        <h3 className="font-semibold text-[18px]">{title}</h3>
       </div>
     </>
   );
