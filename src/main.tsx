@@ -5,10 +5,12 @@ import MainPage from "./components/MainPage/MainPage.tsx";
 import "./index.css";
 import { store } from "./store/store.ts";
 import CatalogPage from "./components/CatalogPage/CatalogPage.tsx";
+import PageNotFound from "./components/PageNotFound/PageNotFound.tsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <MainPage /> },
   { path: "/catalog", element: <CatalogPage /> },
+  { path: "*", element: <PageNotFound /> },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
