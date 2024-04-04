@@ -1,16 +1,13 @@
 import { FC } from "react";
-import { type IFooterLinksList } from "../../../../types/types";
-import Title from "./Title/Title";
-import Items from "./Items/Items";
+import { Link } from "react-router-dom";
+import { IElement } from "../../../../types/Footer/types";
 
-const Links: FC<IFooterLinksList> = ({ styles, title, text }): JSX.Element => {
+const Links: FC<{ element: IElement }> = ({ element }): JSX.Element => {
   return (
-    <div
-      className="flex flex-col gap-[4px]"
-      style={{ textAlign: `${styles.text}` }}
-    >
-      <Title title={title} />
-      <Items items={text} />
+    <div className="flex flex-col gap-[4px]">
+      <Link className="text-[12px]" to={element.link}>
+        {element.text}
+      </Link>
     </div>
   );
 };
