@@ -7,7 +7,7 @@ import { useAppDispatch, useAppSelector } from "../../../../hooks";
 
 const Input: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
-  const { placeholder, search } = useAppSelector((state) => state);
+  const { placeholder, search } = useAppSelector((state) => state.global);
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setSearch(event.target.value));
   };
