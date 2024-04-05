@@ -30,6 +30,8 @@ const initialState: IState = {
     emails: ["remiksnv@yandex.ru"],
   },
   companyName: "ООО «РЕМИКС»",
+  colorTheme: "#4D7E6C",
+  isShowContact: true,
 };
 
 const globalSlice = createSlice({
@@ -47,6 +49,9 @@ const globalSlice = createSlice({
     },
     toggleBurgerIsOpen: (state) => {
       state.burgerIsOpen = !state.burgerIsOpen;
+    },
+    toggleIsShowContact: (state) => {
+      state.isShowContact = !state.isShowContact;
     },
   },
 });
