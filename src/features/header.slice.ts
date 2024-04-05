@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { IState } from "../types/Header/types";
 
 import shapeAsset from "/src/assets/Header/Shape.svg";
