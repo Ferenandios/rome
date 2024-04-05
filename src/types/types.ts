@@ -17,6 +17,8 @@ export interface IState {
   burgerIsOpen: boolean;
   contacts: IContacts;
   companyName: string;
+  colorTheme: string;
+  isShowContact: boolean;
 }
 
 export interface IFooterLinksText {
