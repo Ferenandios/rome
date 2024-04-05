@@ -57,5 +57,9 @@ const globalSlice = createSlice({
 });
 
 export default globalSlice.reducer;
-export const { setSearch, setSearchPlaceholder, toggleBurgerIsOpen } =
-  globalSlice.actions;
+export const {
+  setSearch,
+  setSearchPlaceholder,
+  toggleBurgerIsOpen,
+  toggleIsShowContact,
+} = globalSlice.actions;
