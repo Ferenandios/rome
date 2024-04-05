@@ -3,6 +3,7 @@ import globalSlice from "../features/global.slice";
 import headerSlice from "../features/header.slice";
 import footerSlice from "../features/footer.slice";
 import mainContentSlice from "../features/mainContent.slice";
+import messageSlice from "../features/message.slice";
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     header: headerSlice,
     mainContent: mainContentSlice,
     footer: footerSlice,
+    message: messageSlice,
   },
 });
 
