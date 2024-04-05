@@ -9,4 +9,5 @@ export interface IElement {
 export interface IState {
   categories: IElement[];
   contacts: IElement[];
+  logoIcon: string;
 }
