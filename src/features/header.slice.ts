@@ -17,16 +17,16 @@ const initialState: IState = {
     },
   ],
   navigation: [
-    { id: 0, text: "Главная", link: "/" },
+    { id: 0, text: "Главная", link: "/rome" },
     {
       id: 1,
       text: "Каталог оборудования",
-      link: "/catalog",
+      link: "/rome/catalog",
     },
     {
       id: 2,
       text: "Обратная связь",
-      link: "/contacts",
+      link: "/rome/contacts",
     },
   ],
   searchIcon: shapeAsset,
