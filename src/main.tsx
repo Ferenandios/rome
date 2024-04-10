@@ -8,8 +8,8 @@ import CatalogPage from "./components/CatalogPage/CatalogPage.tsx";
 import PageNotFound from "./components/PageNotFound/PageNotFound.tsx";
 
 const router = createBrowserRouter([
-  { path: "/", element: <MainPage /> },
-  { path: "/catalog", element: <CatalogPage /> },
+  { path: "/rome", element: <MainPage /> },
+  { path: "/rome/catalog", element: <CatalogPage /> },
   { path: "*", element: <PageNotFound /> },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(
