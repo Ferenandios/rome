@@ -7,7 +7,7 @@ const Logo: FC = (): JSX.Element => {
   return (
     <>
       <Link className="hidden md:flex items-center h-full" to={"/rome"}>
-        <img className="h-[30px]" src={companyLogo} alt="Logo" />
+        <img className="h-[30px] lg:h-[50px]" src={companyLogo} alt="Logo" />
       </Link>
     </>
   );

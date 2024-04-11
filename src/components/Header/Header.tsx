@@ -9,7 +9,7 @@ const Header: FC = (): JSX.Element => {
     <>
       <header>
         <div className="container px-[8px] mx-auto">
-          <div className="flex justify-between h-[50px]">
+          <div className="flex justify-between h-[50px] lg:h-[100px]">
             <div className="flex w-full gap-[8px]">
               <Logo />
               <Burger />

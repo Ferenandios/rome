@@ -15,7 +15,7 @@ const Button: FC = (): JSX.Element => {
         <button
           onMouseUp={handleCLick}
           style={{ backgroundColor: colorTheme }}
-          className="text-white text-[14px] min-w-[177px] max-w-[290px] h-[30px] rounded-full whitespace-nowrap overflow-hidden"
+          className="text-white text-[14px] min-w-[177px] max-w-[290px] h-[30px] rounded-full whitespace-nowrap overflow-hidden lg:h-[50px]"
         >
           {buttonText}
         </button>
