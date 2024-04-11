@@ -19,6 +19,7 @@ export interface IState {
   companyName: string;
   colorTheme: string;
   isShowContact: boolean;
+  isShowMessage: boolean;
 }
 
 export interface IFooterLinksText {
