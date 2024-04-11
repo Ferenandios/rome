@@ -1,8 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { type IState } from "../types/Footer/types";
 
-import logoIcon from "/logo.jpg";
-
 const initialState: IState = {
   categories: [
     { id: 0, text: "Главная", link: "/" },
@@ -31,7 +29,6 @@ const initialState: IState = {
       link: "mailto:remiksnv@yandex.ru",
     },
   ],
-  logoIcon: logoIcon,
 };
 
 const footerSlice = createSlice({ name: "footer", initialState, reducers: {} });
