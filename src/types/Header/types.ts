@@ -11,4 +11,5 @@ export interface IState {
   navigation: IElement[];
   searchIcon: string;
   activeElementId: number;
+  buttonText: string;
 }
