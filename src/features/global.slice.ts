@@ -5,6 +5,7 @@ import serviceImage0 from "/src/assets/Services/0.jpg";
 import serviceImage1 from "/src/assets/Services/1.jpg";
 import serviceImage2 from "/src/assets/Services/2.jpg";
 import serviceImage3 from "/src/assets/Services/3.jpg";
+import companyLogoAsset from "/logo.jpg";
 
 const initialState: IState = {
   showedPage: "catalog",
@@ -30,6 +31,7 @@ const initialState: IState = {
     emails: ["remiksnv@yandex.ru"],
   },
   companyName: "ООО «РЕМИКС»",
+  companyLogo: companyLogoAsset,
   colorTheme: "#4D7E6C",
   isShowContact: true,
   isShowMessage: false,
