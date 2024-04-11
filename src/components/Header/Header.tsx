@@ -1,9 +1,8 @@
 import { FC } from "react";
 import Burger from "./Burger/Burger";
-import Search from "./Search/Search";
-import Logo from "./Logo/Logo";
-import Button from "./Contact/Button/Button";
 import Contact from "./Contact/Contact";
+import Logo from "./Logo/Logo";
+import Search from "./Search/Search";
 
 const Header: FC = (): JSX.Element => {
   return (
