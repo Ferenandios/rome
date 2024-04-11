@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Burger from "./Burger/Burger";
 import Search from "./Search/Search";
+import Logo from "./Logo/Logo";
 
 const Header: FC = (): JSX.Element => {
   return (
@@ -8,6 +9,7 @@ const Header: FC = (): JSX.Element => {
       <header>
         <div className="container px-[8px] mx-auto">
           <div className="flex h-[50px]">
+            <Logo />
             <Burger />
             <Search />
           </div>
