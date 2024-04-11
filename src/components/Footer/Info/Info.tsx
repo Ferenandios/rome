@@ -3,6 +3,7 @@ import { titleType } from "../../../types/Footer/types";
 import Links from "./Links/Links";
 import { useAppSelector } from "../../../hooks";
 import Title from "./Title/Title";
+import { Fragment } from "react";
 
 const Info: FC = (): JSX.Element => {
   const { categories, contacts } = useAppSelector((state) => state.footer);
@@ -11,7 +12,7 @@ const Info: FC = (): JSX.Element => {
     <>
       <div className="flex justify-between md:flex-col md:gap-[12px] lg:flex-row lg:gap-[16px]">
         {titles.map((title, index) => (
-          <>
+          <Fragment key={index}>
             {/* NONE */}
             <div
               className={`md:hidden ${
@@ -57,7 +58,7 @@ const Info: FC = (): JSX.Element => {
                 )}
               </div>
             </div>
-          </>
+          </Fragment>
         ))}
       </div>
     </>
