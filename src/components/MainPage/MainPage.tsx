@@ -4,6 +4,7 @@ import Content from "./Content/Content";
 import Footer from "../Footer/Footer";
 import { useAppSelector } from "../../hooks";
 import Message from "../Message/Message";
+import Crumbs from "../Crumbs/Crumbs";
 
 const MainPage: FC = (): JSX.Element => {
   const { burgerIsOpen } = useAppSelector((state) => state.global);
@@ -13,6 +14,7 @@ const MainPage: FC = (): JSX.Element => {
         className={`${burgerIsOpen ? "w-screen h-screen overflow-hidden" : ""}`}
       >
         <Header />
+        <Crumbs />
         <Content />
         <Footer />
 
