@@ -6,7 +6,7 @@ const Services: FC = (): JSX.Element => {
   const { services } = useAppSelector((state) => state.global);
   return (
     <>
-      <div className="flex flex-col items-center gap-[12px]">
+      <div className="flex flex-col items-center gap-[12px] md:flex-row md:flex-wrap md:justify-center">
         {services.map((service) => (
           <Service key={service.id} serviceId={service.id} />
         ))}

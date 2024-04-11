@@ -9,32 +9,55 @@ const Info: FC = (): JSX.Element => {
   const titles: titleType[] = ["Категории", "Контакты"];
   return (
     <>
-      <div className="flex justify-between">
+      <div className="flex justify-between md:flex-col md:gap-[12px]">
         {titles.map((title, index) => (
-          <div
-            className={`${
-              title === "Контакты" && "text-right"
-            } flex flex-col gap-[4px]`}
-            key={index}
-          >
-            <Title title={title} />
-            <div>
-              {title === "Категории" && (
-                <>
-                  {categories.map((category) => (
-                    <Links key={category.id} element={category} />
-                  ))}
-                </>
-              )}
-              {title === "Контакты" && (
-                <>
-                  {contacts.map((contact) => (
-                    <Links key={contact.id} element={contact} />
-                  ))}
-                </>
-              )}
+          <>
+            {/* NONE */}
+            <div
+              className={`md:hidden ${
+                title === "Контакты" && "text-right"
+              } flex flex-col gap-[4px]`}
+              key={index}
+            >
+              <Title title={title} />
+              <div>
+                {title === "Категории" && (
+                  <>
+                    {categories.map((category) => (
+                      <Links key={category.id} element={category} />
+                    ))}
+                  </>
+                )}
+                {title === "Контакты" && (
+                  <>
+                    {contacts.map((contact) => (
+                      <Links key={contact.id} element={contact} />
+                    ))}
+                  </>
+                )}
+              </div>
             </div>
-          </div>
+            {/* MD */}
+            <div className={`hidden md:flex flex-col gap-[4px]`} key={index}>
+              <Title title={title} />
+              <div>
+                {title === "Категории" && (
+                  <>
+                    {categories.map((category) => (
+                      <Links key={category.id} element={category} />
+                    ))}
+                  </>
+                )}
+                {title === "Контакты" && (
+                  <>
+                    {contacts.map((contact) => (
+                      <Links key={contact.id} element={contact} />
+                    ))}
+                  </>
+                )}
+              </div>
+            </div>
+          </>
         ))}
       </div>
     </>
