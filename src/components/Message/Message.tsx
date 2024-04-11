@@ -17,7 +17,7 @@ const Message: FC = (): JSX.Element => {
       {isShowMessage && (
         <div
           style={{ background: colorTheme + "33" }}
-          className="md:hidden animate-widgetVisible fixed z-30 bottom-[35px] right-[35px] flex justify-center items-center bg-opacity-20 w-[69px] h-[69px] rounded-full"
+          className="md:hidden animate-widgetVisible fixed z-20 bottom-[35px] right-[35px] flex justify-center items-center bg-opacity-20 w-[69px] h-[69px] rounded-full"
         >
           <div className="relative w-[56px] h-[56px]">
             <Animation />

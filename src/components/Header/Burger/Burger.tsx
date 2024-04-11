@@ -11,7 +11,7 @@ const Burger: FC = (): JSX.Element => {
   const titles: titleType[] = ["Контакты", "Навигация"];
   return (
     <>
-      <div className="z-20 flex items-center h-full">
+      <div className="z-40 flex items-center h-full">
         <Hamburger
           toggled={burgerIsOpen}
           toggle={() => dispatch(toggleBurgerIsOpen())}
@@ -21,7 +21,7 @@ const Burger: FC = (): JSX.Element => {
         />
       </div>
       <nav
-        className={`fixed z-10 top-0 left-0 touch-none flex flex-col ${
+        className={`fixed z-30 top-0 left-0 touch-none flex flex-col ${
           burgerIsOpen ? "w-screen" : "w-0"
         } h-screen bg-white gap-[8px] overflow-hidden origin-right duration-500`}
       >
