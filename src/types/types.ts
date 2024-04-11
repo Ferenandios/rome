@@ -17,6 +17,7 @@ export interface IState {
   burgerIsOpen: boolean;
   contacts: IContacts;
   companyName: string;
+  companyLogo: string;
   colorTheme: string;
   isShowContact: boolean;
   isShowMessage: boolean;
