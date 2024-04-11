@@ -5,6 +5,7 @@ import footerSlice from "../features/footer.slice";
 import mainContentSlice from "../features/mainContent.slice";
 import messageSlice from "../features/message.slice";
 import crumbsSlice from "../features/crumbs.slice";
+import modalSlice from "../features/modal.slice";
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
     footer: footerSlice,
     message: messageSlice,
     crumbs: crumbsSlice,
+    modal: modalSlice,
   },
 });
 
