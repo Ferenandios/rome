@@ -32,6 +32,7 @@ const initialState: IState = {
   },
   companyName: "ООО «РЕМИКС»",
   companyLogo: companyLogoAsset,
+  companyAddress: "г. Нижневартовск, ул. Индустриальная 14, стр. 13",
   colorTheme: "#4D7E6C",
   isShowContact: true,
   isShowMessage: false,
