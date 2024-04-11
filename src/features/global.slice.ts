@@ -34,7 +34,7 @@ const initialState: IState = {
   companyLogo: companyLogoAsset,
   companyAddress: "г. Нижневартовск, ул. Индустриальная 14, стр. 13",
   colorTheme: "#4D7E6C",
-  isShowContact: true,
+  isShowModal: false,
   isShowMessage: false,
 };
 
@@ -57,8 +57,8 @@ const globalSlice = createSlice({
     toggleBurgerIsOpen: (state) => {
       state.burgerIsOpen = !state.burgerIsOpen;
     },
-    toggleIsShowContact: (state) => {
-      state.isShowContact = !state.isShowContact;
+    toggleIsShowModal: (state) => {
+      state.isShowModal = !state.isShowModal;
     },
     toggleIsShowMessage: (state) => {
       state.isShowMessage = !state.isShowMessage;
@@ -71,6 +71,6 @@ export const {
   setSearch,
   setSearchPlaceholder,
   toggleBurgerIsOpen,
-  toggleIsShowContact,
+  toggleIsShowModal,
   toggleIsShowMessage,
 } = globalSlice.actions;
