@@ -18,7 +18,6 @@ const Info: FC = (): JSX.Element => {
               className={`md:hidden ${
                 title === "Контакты" && "text-right"
               } flex flex-col gap-[4px]`}
-              key={index}
             >
               <Title title={title} />
               <div>
