@@ -15,7 +15,7 @@ const Animation: FC = (): JSX.Element => {
     <>
       <div
         style={{ borderColor: colorTheme }}
-        className="animate-widgetPulse absolute top-0 left-0 bottom-0 right-0 border-[1px] rounded-[50%] cursor-pointer"
+        className="z-10 animate-widgetPulse absolute top-0 left-0 bottom-0 right-0 border-[1px] rounded-[50%] cursor-pointer"
       ></div>
     </>
   );
