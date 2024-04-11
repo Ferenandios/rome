@@ -6,7 +6,7 @@ const Header: FC = (): JSX.Element => {
   return (
     <>
       <header>
-        <div className="container px-[8px]">
+        <div className="container px-[8px] mx-auto">
           <div className="flex h-[50px]">
             <Burger />
             <Search />

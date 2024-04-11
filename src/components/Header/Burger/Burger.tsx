@@ -11,7 +11,7 @@ const Burger: FC = (): JSX.Element => {
   const titles: titleType[] = ["Контакты", "Навигация"];
   return (
     <>
-      <div className="z-40 flex items-center h-full">
+      <div className="md:hidden z-40 flex items-center h-full">
         <Hamburger
           toggled={burgerIsOpen}
           toggle={() => dispatch(toggleBurgerIsOpen())}
