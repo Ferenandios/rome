@@ -46,7 +46,10 @@ const globalSlice = createSlice({
       state.search = action.payload;
     },
     setSearchPlaceholder: (state) => {
-      if (state.services.length <= 0) return;
+      if (state.services.length <= 0) {
+        state.placeholder = "Введите название услуги";
+        return;
+      }
       const randomService: IService =
         state.services[Math.floor(Math.random() * state.services.length)];
       state.placeholder = randomService.title;
