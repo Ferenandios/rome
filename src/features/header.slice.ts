@@ -31,6 +31,7 @@ const initialState: IState = {
   ],
   searchIcon: shapeAsset,
   activeElementId: 0,
+  buttonText: "Обратная связь",
 };
 
 const headerSlice = createSlice({
