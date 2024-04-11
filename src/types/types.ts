@@ -20,7 +20,7 @@ export interface IState {
   companyLogo: string;
   companyAddress: string;
   colorTheme: string;
-  isShowContact: boolean;
+  isShowModal: boolean;
   isShowMessage: boolean;
 }
 
