@@ -18,6 +18,7 @@ export interface IState {
   contacts: IContacts;
   companyName: string;
   companyLogo: string;
+  companyAddress: string;
   colorTheme: string;
   isShowContact: boolean;
   isShowMessage: boolean;
