@@ -22,7 +22,7 @@ const MainPage: FC = (): JSX.Element => {
         <Footer />
 
         <Message />
-        {isShowModal && <Modal />}
+        <Modal />
       </main>
     </>
   );
