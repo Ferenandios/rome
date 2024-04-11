@@ -7,7 +7,7 @@ const Content: FC = (): JSX.Element => {
     <>
       <section className="pt-[12px] pb-[18px] lg:pt-[24px]">
         <div className="container px-[8px] sm:mx-auto">
-          <div className="flex flex-col gap-[28px] lg:items-center">
+          <div className="flex flex-col min-h-[500px] gap-[28px] lg:items-center">
             <Title />
             <Services />
           </div>
