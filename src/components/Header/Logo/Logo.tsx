@@ -6,7 +6,7 @@ const Logo: FC = (): JSX.Element => {
   const { companyLogo } = useAppSelector((state) => state.global);
   return (
     <>
-      <Link className="flex items-center h-full" to={"/rome"}>
+      <Link className="hidden md:flex items-center h-full" to={"/rome"}>
         <img className="h-[30px]" src={companyLogo} alt="Logo" />
       </Link>
     </>
