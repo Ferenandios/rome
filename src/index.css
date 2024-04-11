@@ -28,3 +28,29 @@
 .animate-widgetPulse {
   animation: widgetPulse infinite 1.5s;
 }
+
+@keyframes widgetVisible {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  30.001% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  62.999% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.animate-widgetVisible {
+  animation: widgetVisible 1s ease-out forwards 1;
+}
