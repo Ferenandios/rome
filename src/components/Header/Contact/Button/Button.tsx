@@ -1,13 +1,13 @@
 import { FC } from "react";
+import { toggleIsShowModal } from "../../../../features/global.slice";
 import { useAppDispatch, useAppSelector } from "../../../../hooks";
-import { toggleIsShowContact } from "../../../../features/global.slice";
 
 const Button: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
   const { colorTheme } = useAppSelector((state) => state.global);
   const { buttonText } = useAppSelector((state) => state.header);
   const handleCLick = () => {
-    dispatch(toggleIsShowContact());
+    dispatch(toggleIsShowModal());
   };
   return (
     <>
