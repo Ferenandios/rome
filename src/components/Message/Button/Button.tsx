@@ -14,8 +14,7 @@ const Button: FC = (): JSX.Element => {
       <button
         onMouseUp={handleClick}
         style={{ backgroundColor: colorTheme }}
-        className={`flex justify-center items-center 
-          w-[50px] h-[50px] rounded-full`}
+        className="flex justify-center items-center w-full h-full rounded-full"
       >
         <img className="w-[47%]" src={logoIcon} alt="Write" />
       </button>
