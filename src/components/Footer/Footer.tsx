@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Info from "./Info/Info";
 import Logo from "./Logo/Logo";
-import Copyright from "./Copyright/Copyright";
+import Locate from "./Locate/Locate";
 
 const Footer: FC = (): JSX.Element => {
   return (
@@ -11,7 +11,7 @@ const Footer: FC = (): JSX.Element => {
           <div className="md:flex">
             <Info />
             <Logo />
-            <Copyright />
+            <Locate />
           </div>
         </div>
       </footer>
