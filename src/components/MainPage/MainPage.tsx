@@ -5,13 +5,16 @@ import Footer from "../Footer/Footer";
 import { useAppSelector } from "../../hooks";
 import Message from "../Message/Message";
 import Crumbs from "../Crumbs/Crumbs";
+import Modal from "../Modal/Modal";
 
 const MainPage: FC = (): JSX.Element => {
-  const { burgerIsOpen } = useAppSelector((state) => state.global);
+  const { burgerIsOpen, isShowModal } = useAppSelector((state) => state.global);
   return (
     <>
       <main
-        className={`${burgerIsOpen ? "w-screen h-screen overflow-hidden" : ""}`}
+        className={`${
+          burgerIsOpen || isShowModal ? "w-screen h-screen overflow-hidden" : ""
+        }`}
       >
         <Header />
         <Crumbs />
@@ -19,6 +22,7 @@ const MainPage: FC = (): JSX.Element => {
         <Footer />
 
         <Message />
+        {isShowModal && <Modal />}
       </main>
     </>
   );
