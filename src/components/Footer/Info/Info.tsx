@@ -9,7 +9,7 @@ const Info: FC = (): JSX.Element => {
   const titles: titleType[] = ["Категории", "Контакты"];
   return (
     <>
-      <div className="flex justify-between md:flex-col md:gap-[12px]">
+      <div className="flex justify-between md:flex-col md:gap-[12px] lg:flex-row lg:gap-[16px]">
         {titles.map((title, index) => (
           <>
             {/* NONE */}
@@ -38,7 +38,7 @@ const Info: FC = (): JSX.Element => {
               </div>
             </div>
             {/* MD */}
-            <div className={`hidden md:flex flex-col gap-[4px]`} key={index}>
+            <div className="hidden md:flex flex-col gap-[4px]" key={index}>
               <Title title={title} />
               <div>
                 {title === "Категории" && (

@@ -5,7 +5,8 @@ import Address from "./Address/Address";
 const Locate: FC = (): JSX.Element => {
   return (
     <>
-      <div className="flex flex-col items-end gap-[8px]">
+      <div className="flex flex-col items-end gap
+      -[8px]">
         <Copyright />
         <Address />
       </div>
