@@ -17,7 +17,7 @@ const Input: FC = (): JSX.Element => {
   return (
     <>
       <input
-        className="text-[12px] w-[90%] min-w-[28px] h-[28px] bg-white rounded-full pl-[8px] pr-[27px] drop-shadow-md text-ellipsis"
+        className="text-[12px] w-[90%] min-w-[28px] h-[28px] bg-white rounded-full pl-[8px] pr-[27px] drop-shadow-md text-ellipsis md:h-[30px]"
         onChange={handleChange}
         value={search}
         placeholder={placeholder}
