@@ -7,9 +7,19 @@ const Services: FC = (): JSX.Element => {
   return (
     <>
       <div className="flex flex-col items-center gap-[12px] md:flex-row md:flex-wrap md:justify-center lg:max-w-[1000px] lg:gap-[27px]">
-        {services.map((service) => (
-          <Service key={service.id} serviceId={service.id} />
-        ))}
+        {services.length ? (
+          <>
+            {services.map((service) => (
+              <Service key={service.id} serviceId={service.id} />
+            ))}
+          </>
+        ) : (
+          <>
+            <h3 className="text-[16px] opacity-60 h-[450px]">
+              Ассортимент отсутствует
+            </h3>
+          </>
+        )}
       </div>
     </>
   );
