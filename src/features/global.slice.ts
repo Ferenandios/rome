@@ -32,6 +32,7 @@ const initialState: IState = {
   companyName: "ООО «РЕМИКС»",
   colorTheme: "#4D7E6C",
   isShowContact: true,
+  isShowMessage: false,
 };
 
 const globalSlice = createSlice({
@@ -53,6 +54,9 @@ const globalSlice = createSlice({
     toggleIsShowContact: (state) => {
       state.isShowContact = !state.isShowContact;
     },
+    toggleIsShowMessage: (state) => {
+      state.isShowMessage = !state.isShowMessage;
+    },
   },
 });
 
@@ -62,4 +66,5 @@ export const {
   setSearchPlaceholder,
   toggleBurgerIsOpen,
   toggleIsShowContact,
+  toggleIsShowMessage,
 } = globalSlice.actions;
