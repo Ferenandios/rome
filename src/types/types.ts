@@ -47,3 +47,9 @@ export interface IFooterLinksList {
   text: IFooterLinksText[];
   styles: IFooterLinksStyles;
 }
+
+export interface IFormInputList {
+  id: number;
+  title: string;
+  placeholder: string;
+}
