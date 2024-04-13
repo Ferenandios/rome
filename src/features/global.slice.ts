@@ -1,12 +1,12 @@
-import { IService } from "./../types/types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IService, type IState } from "../types/types";
+import { type IState } from "../types/types";
+import { IService } from "./../types/types";
 
+import companyLogoAsset from "/logo.jpg";
 import serviceImage0 from "/src/assets/Services/0.jpg";
 import serviceImage1 from "/src/assets/Services/1.jpg";
 import serviceImage2 from "/src/assets/Services/2.jpg";
 import serviceImage3 from "/src/assets/Services/3.jpg";
-import companyLogoAsset from "/logo.jpg";
 
 const initialState: IState = {
   showedPage: "catalog",
