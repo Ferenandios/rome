@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import { useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { setCurrentService } from "../../features/global.slice";
+import Content from "./Content/Content";
 
 const CatalogPage: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -13,11 +14,11 @@ const CatalogPage: FC = (): JSX.Element => {
     itemId !== undefined && !isNaN(+itemId) ? services[+itemId] : null;
   useEffect(() => {
     service && dispatch(setCurrentService(service));
-  });
+  }, []);
   return (
     <>
       <Header />
-      {service ? service.title : "rolfanPomoika"}
+      <Content />
       <Footer />
     </>
   );
