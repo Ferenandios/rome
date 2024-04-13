@@ -1,3 +1,4 @@
+import { IService } from "./../types/types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IService, type IState } from "../types/types";
 
@@ -25,6 +26,11 @@ const initialState: IState = {
     { id: 2, title: "Изготовление металлоконструкций", image: serviceImage2 },
     { id: 3, title: "Гибка металла", image: serviceImage3 },
   ],
+  currentService: {
+    id: -1,
+    title: "",
+    image: "https://placehold.co/600x400/EEE/31343C?text=404",
+  },
   burgerIsOpen: false,
   contacts: {
     phones: ["+73466671691", "214848", "214840"],
@@ -63,6 +69,9 @@ const globalSlice = createSlice({
     toggleIsShowMessage: (state) => {
       state.isShowMessage = !state.isShowMessage;
     },
+    setCurrentService: (state, action: PayloadAction<IService>) => {
+      state.currentService = action.payload;
+    },
   },
 });
 
@@ -73,4 +82,5 @@ export const {
   toggleBurgerIsOpen,
   toggleIsShowModal,
   toggleIsShowMessage,
+  setCurrentService,
 } = globalSlice.actions;
