@@ -1,9 +1,12 @@
 import { FC } from "react";
+import Description from "./Description/Description";
 
 const Bottom: FC = (): JSX.Element => {
   return (
     <>
-      <div>LOL</div>
+      <div>
+        <Description />
+      </div>
     </>
   );
 };
