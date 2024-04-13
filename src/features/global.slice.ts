@@ -29,7 +29,7 @@ const initialState: IState = {
   currentService: {
     id: -1,
     title: "",
-    image: "https://placehold.co/600x400/EEE/31343C?text=404",
+    image: "",
   },
   burgerIsOpen: false,
   contacts: {
