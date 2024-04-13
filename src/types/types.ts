@@ -1,7 +1,16 @@
+type descriptionTypeType = "title" | "p" | "ul";
+
+export interface IDescription {
+  id: number;
+  type: descriptionTypeType;
+  text: string[];
+}
+
 export interface IService {
   id: number;
   title: string;
   image: string;
+  description: IDescription[];
 }
 
 interface IContacts {
