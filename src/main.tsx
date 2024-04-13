@@ -9,7 +9,8 @@ import PageNotFound from "./components/PageNotFound/PageNotFound.tsx";
 
 const router = createBrowserRouter([
   { path: "/rome", element: <MainPage /> },
-  { path: "/rome/catalog", element: <CatalogPage /> },
+  { path: "/rome/catalog", element: <MainPage /> },
+  { path: "/rome/catalog/:itemId/", element: <CatalogPage /> },
   { path: "*", element: <PageNotFound /> },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(
