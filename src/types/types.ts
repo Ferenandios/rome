@@ -14,6 +14,7 @@ export interface IState {
   search: string;
   placeholder: string;
   services: IService[];
+  currentService: IService;
   burgerIsOpen: boolean;
   contacts: IContacts;
   companyName: string;
