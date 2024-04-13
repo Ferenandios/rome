@@ -7,7 +7,7 @@ const Image: FC = (): JSX.Element => {
     <>
       <div className="w-full h-[234px]">
         <img
-          className="w-full h-full"
+          className="w-full h-full object-cover"
           src={currentService.image}
           alt="Service Image"
         />
