@@ -1,7 +1,6 @@
 type descriptionTypeType = "title" | "p" | "ul";
 
 export interface IDescription {
-  id: number;
   type: descriptionTypeType;
   text: string[];
 }
@@ -11,6 +10,7 @@ export interface IService {
   title: string;
   image: string;
   description: IDescription[];
+  layout: string[];
 }
 
 interface IContacts {
@@ -46,10 +46,4 @@ export interface IFooterLinksList {
   title: string;
   text: IFooterLinksText[];
   styles: IFooterLinksStyles;
-}
-
-export interface IFormInputList {
-  id: number;
-  title: string;
-  placeholder: string;
 }
