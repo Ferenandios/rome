@@ -1,19 +1,22 @@
 import { FC } from "react";
-import { IFormInputList } from "../../types/types";
-import Input from "./Input/Input";
+import Inputs from "./Inputs/Inputs";
+import Textareas from "./Textareas/Textareas";
+import Button from "./Button/Button";
+import Layout from "./Layout/Layout";
 
-const Form: FC<{ width?: number }> = ({ width }): JSX.Element => {
-  const inputList: IFormInputList[] = [
-    { id: 0, title: "Имя", placeholder: "Введите Ваше имя" },
-    { id: 1, title: "Почта", placeholder: "Введите Вашу почту" },
-    { id: 2, title: "Телефон", placeholder: "Введите Ваш телефон" },
-  ];
+const Form: FC<{ width?: string }> = ({ width }): JSX.Element => {
   return (
-    <div className="w-full">
-      {inputList.map((input) => (
-        <Input key={input.id} input={input} />
-      ))}
-    </div>
+    <>
+      <div
+        style={{ width: width !== undefined ? width : "" }}
+        className="flex flex-col gap-[8px]"
+      >
+        <Inputs />
+        <Textareas />
+        <Button />
+        <Layout />
+      </div>
+    </>
   );
 };
 
