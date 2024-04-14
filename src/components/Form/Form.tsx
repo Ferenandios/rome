@@ -7,13 +7,15 @@ import Layout from "./Layout/Layout";
 const Form: FC<{ width?: string }> = ({ width }): JSX.Element => {
   return (
     <>
-      <div
-        style={{ width: width !== undefined ? width : "" }}
-        className="flex flex-col gap-[8px]"
-      >
-        <Inputs />
-        <Textareas />
-        <Button />
+      <div className="md:flex md:justify-between">
+        <div
+          style={{ width: width !== undefined ? width : "" }}
+          className="flex flex-col gap-[8px] md:w-[440px]"
+        >
+          <Inputs />
+          <Textareas />
+          <Button />
+        </div>
         <Layout />
       </div>
     </>
