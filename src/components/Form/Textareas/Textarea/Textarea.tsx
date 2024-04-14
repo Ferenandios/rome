@@ -12,9 +12,8 @@ const Textarea: FC<{ textarea: ITextarea }> = ({ textarea }): JSX.Element => {
           style={{ borderColor: colorTheme }}
           className="font-bold w-full h-[300px] border-2 rounded-[7px] resize-none p-[4px]"
           placeholder={textarea.placeholder}
-        >
-          {textarea.text}
-        </textarea>
+          defaultValue={textarea.text}
+        ></textarea>
       </div>
     </>
   );
