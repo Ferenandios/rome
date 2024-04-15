@@ -5,7 +5,7 @@ const Line: FC = (): JSX.Element => {
   const { colorTheme } = useAppSelector((state) => state.global);
   return (
     <>
-      <hr style={{ borderColor: colorTheme }} />
+      <hr className="lg:hidden" style={{ borderColor: colorTheme }} />
     </>
   );
 };

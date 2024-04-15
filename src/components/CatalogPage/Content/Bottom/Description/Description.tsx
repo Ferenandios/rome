@@ -12,7 +12,7 @@ const Description: FC = (): JSX.Element => {
     <>
       {description.length ? (
         <>
-          <div className="flex flex-col gap-[12px]">
+          <div className="flex flex-col gap-[12px] lg:max-w-[500px]">
             {description.map((block, index) => (
               <Fragment key={index}>
                 {block.type === "title" && (
