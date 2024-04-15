@@ -1,29 +1,19 @@
 import { FC } from "react";
-import Inputs from "./Inputs/Inputs";
-import Textareas from "./Textareas/Textareas";
 import Button from "./Button/Button";
+import Inputs from "./Inputs/Inputs";
 import Layout from "./Layout/Layout";
-import { useAppSelector } from "../../hooks";
+import Textareas from "./Textareas/Textareas";
 
-const Form: FC<{ width?: string }> = ({ width }): JSX.Element => {
-  const { layout } = useAppSelector((state) => state.global.currentService);
+const Form: FC<{ layout?: "hidden" }> = ({ layout }): JSX.Element => {
   return (
     <>
-      <div
-        style={{ justifyContent: !layout.length ? "center" : "space-between" }}
-        className="md:flex"
-      >
-        <div
-          style={{
-            width: width !== undefined ? width : "",
-          }}
-          className="flex flex-col gap-[8px] md:w-[440px]"
-        >
+      <div className="md:flex justify-between lg:justify-normal lg:gap-[16px]">
+        <form className="flex flex-col gap-[8px] md:w-[440px] lg:w-[358px]">
           <Inputs />
           <Textareas />
           <Button />
-        </div>
-        <Layout />
+        </form>
+        {layout !== "hidden" && <Layout />}
       </div>
     </>
   );
