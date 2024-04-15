@@ -70,7 +70,13 @@ const initialState: IState = {
       title: "Порошковая покраска металлических изделий",
       image: serviceImage1,
       description: [],
-      layout: [],
+      layout: [
+        "Начните с того, что свяжитесь с нами по телефону, электронной почте или оставьте заявку на сайте.",
+        "Расскажите нам о вашем проекте и предоставьте нам детали, такие как размеры, материал и количество.",
+        "Наши эксперты помогут вам выбрать наилучший материал и настроить параметры для вашего проекта.",
+        "Если вам нравится наше предложение, подтвердите заказ, и мы приступим к работе.",
+        "Мы организуем доставку вашего заказа в удобное для вас место.",
+      ],
     },
     {
       id: 2,
@@ -132,8 +138,10 @@ const globalSlice = createSlice({
     toggleIsShowMessage: (state) => {
       state.isShowMessage = !state.isShowMessage;
     },
-    setCurrentService: (state, action: PayloadAction<IService>) => {
-      state.currentService = action.payload;
+    setCurrentService: (state, { payload }: PayloadAction<IService>) => {
+      // if length = 0
+      if (!payload.layout.length) return;
+      state.currentService = payload;
     },
   },
 });
