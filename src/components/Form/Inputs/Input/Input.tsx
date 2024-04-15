@@ -12,7 +12,8 @@ const Input: FC<{ input: IInput }> = ({ input }): JSX.Element => {
           style={{ borderColor: colorTheme }}
           className="font-bold w-full h-[36px] border-[2px] rounded-[7px] pl-[4px]"
           placeholder={input.placeholder}
-          type="text"
+          type={input.type}
+          required
         />
       </div>
     </>
