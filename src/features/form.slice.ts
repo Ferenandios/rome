@@ -3,11 +3,11 @@ import { IState } from "../types/Form/types";
 
 const initialState: IState = {
   inputList: [
-    { id: 0, type: "name", title: "Имя", placeholder: "Введите Ваше имя" },
+    { id: 0, type: "text", title: "Имя", placeholder: "Введите Ваше имя" },
     { id: 1, type: "email", title: "Почта", placeholder: "Введите Вашу почту" },
     {
       id: 2,
-      type: "phone",
+      type: "tel",
       title: "Телефон",
       placeholder: "Введите Ваш телефон",
     },
