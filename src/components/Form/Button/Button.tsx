@@ -16,6 +16,7 @@ const Button: FC = (): JSX.Element => {
         <button
           onClick={handleClick}
           className="font-bold text-white text-[20px]"
+          type="submit"
         >
           {buttonText}
         </button>
