@@ -1,4 +1,4 @@
-type formInputListTypeType = "name" | "email" | "phone";
+type formInputListTypeType = "text" | "email" | "tel";
 
 export interface IInput {
   id: number;
