@@ -1,9 +1,10 @@
-import React, { FC } from "react";
+import { FC } from "react";
+import styles from "./Text.module.css";
 
 const Text: FC<{ text: string }> = ({ text }): JSX.Element => {
   return (
     <>
-      <li className="font-bold text-[14px] w-full">{text}</li>
+      <li className={styles.item}>{text}</li>
     </>
   );
 };

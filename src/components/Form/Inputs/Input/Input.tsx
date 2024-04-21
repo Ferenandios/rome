@@ -1,16 +1,17 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../../hooks";
 import { IInput } from "../../../../types/Form/types";
+import styles from "./Input.module.css";
 
 const Input: FC<{ input: IInput }> = ({ input }): JSX.Element => {
   const { colorTheme } = useAppSelector((state) => state.global);
   return (
     <>
-      <div className="flex flex-col">
-        <p className="font-bold">{input.title}</p>
+      <div className={styles.inner}>
+        <p className={styles.title}>{input.title}</p>
         <input
           style={{ borderColor: colorTheme }}
-          className="font-bold w-full h-[36px] border-[2px] rounded-[7px] pl-[4px]"
+          className={styles.input}
           placeholder={input.placeholder}
           type={input.type}
           required

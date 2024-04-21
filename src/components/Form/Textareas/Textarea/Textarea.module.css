@@ -1,0 +1,11 @@
+.inner {
+  @apply flex flex-col w-full;
+}
+
+.title {
+  @apply font-bold;
+}
+
+.textarea {
+  @apply font-bold w-full h-[300px] border-2 rounded-[7px] resize-none p-[4px];
+}

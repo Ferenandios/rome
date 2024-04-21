@@ -1,0 +1,7 @@
+.inner {
+  @apply flex justify-center items-center w-full h-[50px] rounded-[7px];
+}
+
+.button {
+  @apply font-bold text-white text-[20px] w-full h-full;
+}

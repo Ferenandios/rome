@@ -1,12 +1,13 @@
 import { FC } from "react";
-import Input from "./Input/Input";
 import { useAppSelector } from "../../../hooks";
+import Input from "./Input/Input";
+import styles from "./Inputs.module.css";
 
 const Inputs: FC = (): JSX.Element => {
   const { inputList } = useAppSelector((state) => state.form);
   return (
     <>
-      <div className="flex flex-col w-full gap-[4px]">
+      <div className={styles.inner}>
         {inputList.map((input) => (
           <Input key={input.id} input={input} />
         ))}

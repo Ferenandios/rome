@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../hooks";
+import styles from "./Button.module.css";
 
 const Button: FC = (): JSX.Element => {
   const { colorTheme } = useAppSelector((state) => state.global);
@@ -9,15 +10,8 @@ const Button: FC = (): JSX.Element => {
   };
   return (
     <>
-      <div
-        style={{ backgroundColor: colorTheme }}
-        className="flex justify-center items-center w-full h-[50px] rounded-[7px]"
-      >
-        <button
-          onClick={handleClick}
-          className="font-bold text-white text-[20px]"
-          type="submit"
-        >
+      <div style={{ backgroundColor: colorTheme }} className={styles.inner}>
+        <button onClick={handleClick} className={styles.button} type="submit">
           {buttonText}
         </button>
       </div>

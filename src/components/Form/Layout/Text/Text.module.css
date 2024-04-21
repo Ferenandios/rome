@@ -1,0 +1,3 @@
+.item {
+  @apply font-bold text-[14px] w-full;
+}

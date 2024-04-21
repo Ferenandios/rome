@@ -3,12 +3,13 @@ import Button from "./Button/Button";
 import Inputs from "./Inputs/Inputs";
 import Layout from "./Layout/Layout";
 import Textareas from "./Textareas/Textareas";
+import styles from "./Form.module.css";
 
 const Form: FC<{ layout?: "hidden" }> = ({ layout }): JSX.Element => {
   return (
     <>
-      <div className="md:flex justify-between lg:justify-normal lg:gap-[16px]">
-        <form className="flex flex-col gap-[8px] md:w-[440px] lg:w-[352px]">
+      <div className={styles.inner}>
+        <form className={styles.form}>
           <Inputs />
           <Textareas />
           <Button />

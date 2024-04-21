@@ -1,0 +1,7 @@
+.inner {
+  @apply md:flex justify-between lg:justify-normal lg:gap-[16px];
+}
+
+.form {
+  @apply flex flex-col gap-[8px] md:w-[440px] lg:w-[352px];
+}
