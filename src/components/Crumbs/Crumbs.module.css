@@ -1,0 +1,7 @@
+.section {
+  @apply hidden md:block;
+}
+
+.inner {
+  @apply flex;
+}

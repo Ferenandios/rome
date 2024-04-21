@@ -2,13 +2,14 @@ import { FC } from "react";
 import Info from "./Info/Info";
 import Logo from "./Logo/Logo";
 import Locate from "./Locate/Locate";
+import styles from "./Footer.module.css";
 
 const Footer: FC = (): JSX.Element => {
   return (
     <>
-      <footer className="pt-[24px] pb-[12px] md:pt-[28px]">
-        <div className="container px-[8px] mx-auto">
-          <div className="md:flex">
+      <footer className={styles.section}>
+        <div className={styles.containerr}>
+          <div className={styles.inner}>
             <Info />
             <Logo />
             <Locate />

@@ -1,0 +1,7 @@
+.ansoc {
+  @apply hidden md:flex w-[200px] lg:justify-end lg:w-[350px];
+}
+
+.address {
+  @apply font-sans font-semibold text-[12px] text-right;
+}

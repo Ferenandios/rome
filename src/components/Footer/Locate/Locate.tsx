@@ -1,12 +1,12 @@
 import { FC } from "react";
 import Copyright from "./Copyright/Copyright";
 import Address from "./Address/Address";
+import styles from "./Locate.module.css";
 
 const Locate: FC = (): JSX.Element => {
   return (
     <>
-      <div className="flex flex-col items-end gap
-      -[8px]">
+      <div className={styles.inner}>
         <Copyright />
         <Address />
       </div>

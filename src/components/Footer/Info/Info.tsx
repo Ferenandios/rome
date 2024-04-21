@@ -1,16 +1,16 @@
-import { FC } from "react";
-import { titleType } from "../../../types/Footer/types";
-import Links from "./Links/Links";
+import { FC, Fragment } from "react";
 import { useAppSelector } from "../../../hooks";
+import { type titleType } from "../../../types/Footer/types";
+import Links from "./Links/Links";
 import Title from "./Title/Title";
-import { Fragment } from "react";
+import styles from "./Info.module.css";
 
 const Info: FC = (): JSX.Element => {
   const { categories, contacts } = useAppSelector((state) => state.footer);
   const titles: titleType[] = ["Категории", "Контакты"];
   return (
     <>
-      <div className="flex justify-between md:flex-col md:gap-[12px] lg:flex-row lg:gap-[16px]">
+      <div className={styles.inner}>
         {titles.map((title, index) => (
           <Fragment key={index}>
             {/* NONE */}

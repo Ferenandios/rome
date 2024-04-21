@@ -1,0 +1,11 @@
+.section {
+  @apply pt-[24px] pb-[12px] md:pt-[28px];
+}
+
+.containerr {
+  @apply container px-[8px] mx-auto;
+}
+
+.inner {
+  @apply md:flex;
+}

@@ -1,14 +1,13 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../../hooks";
+import styles from "./Address.module.css";
 
 const Address: FC = (): JSX.Element => {
   const { companyAddress } = useAppSelector((state) => state.global);
   return (
     <>
-      <div className="hidden md:flex w-[200px] lg:justify-end lg:w-[350px]">
-        <address className="font-sans font-semibold text-[12px] text-right">
-          {companyAddress}
-        </address>
+      <div className={styles.ansoc}>
+        <address className={styles.address}>{companyAddress}</address>
       </div>
     </>
   );

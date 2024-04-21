@@ -1,0 +1,7 @@
+.ansoc {
+  @apply flex justify-center w-full mt-[16px] md:mt-0 lg:justify-end lg:w-[350px];
+}
+
+.text {
+  @apply font-sans font-semibold text-[12px] text-center;
+}
