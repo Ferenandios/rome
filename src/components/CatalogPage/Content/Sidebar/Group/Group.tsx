@@ -2,6 +2,7 @@ import { FC } from "react";
 import { type IService } from "../../../../../types/types";
 import { NavLink } from "react-router-dom";
 import { useAppSelector } from "../../../../../hooks";
+import styles from "./Group.module.css";
 
 const Group: FC<{ service: IService }> = ({ service }): JSX.Element => {
   const { colorTheme } = useAppSelector((state) => state.global);
@@ -9,15 +10,13 @@ const Group: FC<{ service: IService }> = ({ service }): JSX.Element => {
     <>
       <NavLink
         to={`/rome/catalog/${service.id}`}
-        style={({ isActive }) => {
-          return {
-            backgroundColor: isActive ? colorTheme : "",
-            color: isActive ? "white" : "",
-          };
-        }}
-        className="flex items-center w-full p-[8px] rounded-l-[9px] rounded-r-[3px]"
+        style={({ isActive }) => ({
+          backgroundColor: isActive ? colorTheme : "",
+          color: isActive ? "white" : "",
+        })}
+        className={styles.button}
       >
-        <h3 className="font-bold text-[14px] text-wrap">{service.title}</h3>
+        <h3 className={styles.title}>{service.title}</h3>
       </NavLink>
     </>
   );

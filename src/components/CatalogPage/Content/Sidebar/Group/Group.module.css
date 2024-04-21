@@ -1,0 +1,7 @@
+.button {
+  @apply flex items-center w-full p-[8px] rounded-l-[9px] rounded-r-[3px];
+}
+
+.title {
+  @apply font-bold text-[14px] text-wrap;
+}

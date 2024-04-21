@@ -15,7 +15,7 @@ const CatalogPage: FC = (): JSX.Element => {
     itemId !== undefined && !isNaN(+itemId) ? services[+itemId] : null;
   useEffect(() => {
     service && dispatch(setCurrentService(service));
-  }, []);
+  }, [dispatch, service]);
   return (
     <>
       <Header />

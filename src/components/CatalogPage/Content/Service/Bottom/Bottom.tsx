@@ -1,11 +1,12 @@
 import { FC } from "react";
 import Description from "./Description/Description";
 import Form from "../../../../Form/Form";
+import styles from "./Bottom.module.css";
 
 const Bottom: FC = (): JSX.Element => {
   return (
     <>
-      <div className="flex flex-col gap-[16px]">
+      <div className={styles.inner}>
         <Description />
         <Form />
       </div>

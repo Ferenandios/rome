@@ -1,0 +1,11 @@
+.inner {
+  @apply flex w-full h-[234px] gap-[16px] sm:h-[300px] md:h-[500px] lg:h-[578px] lg:order-2;
+}
+
+.img {
+  @apply w-full h-full object-cover lg: w-[440px];
+}
+
+.ansoc {
+  @apply hidden lg: flex;
+}

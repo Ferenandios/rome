@@ -1,18 +1,19 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../../../../hooks";
 import Form from "../../../../../Form/Form";
+import styles from "./Image.module.css";
 
 const Image: FC = (): JSX.Element => {
   const { currentService } = useAppSelector((state) => state.global);
   return (
     <>
-      <div className="flex w-full h-[234px] gap-[16px] sm:h-[300px] md:h-[500px] lg:h-[578px] lg:order-2">
+      <div className={styles.inner}>
         <img
-          className="w-full h-full object-cover lg:w-[440px]"
+          className={styles.img}
           src={currentService.image}
           alt="Service Image"
         />
-        <div className="hidden lg:flex">
+        <div className={styles.ansoc}>
           <Form layout="hidden" />
         </div>
       </div>

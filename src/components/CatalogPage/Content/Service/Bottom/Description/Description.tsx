@@ -3,6 +3,7 @@ import { useAppSelector } from "../../../../../../hooks";
 import ListItem from "./ListItem/ListItem";
 import Paragraph from "./Paragraph/Paragraph";
 import Title from "./Title/Title";
+import styles from "./Description.module.css";
 
 const Description: FC = (): JSX.Element => {
   const { description } = useAppSelector(
@@ -12,7 +13,7 @@ const Description: FC = (): JSX.Element => {
     <>
       {description.length ? (
         <>
-          <div className="flex flex-col gap-[12px] lg:max-w-[500px]">
+          <div className={styles.inner}>
             {description.map((block, index) => (
               <Fragment key={index}>
                 {block.type === "title" && (
@@ -23,7 +24,7 @@ const Description: FC = (): JSX.Element => {
                   </>
                 )}
                 {block.type === "ul" && (
-                  <ul className="flex flex-col list-disc gap-[8px] pl-[20px]">
+                  <ul className={styles.list}>
                     {block.text.map((text, i) => (
                       <ListItem key={i} text={text} />
                     ))}
@@ -42,9 +43,7 @@ const Description: FC = (): JSX.Element => {
         </>
       ) : (
         <>
-          <h1 className="font-inter text-[16px] opacity-60">
-            Описание отсутствует.
-          </h1>
+          <h1 className={styles.title}>Описание отсутствует.</h1>
         </>
       )}
     </>

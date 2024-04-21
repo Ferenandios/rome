@@ -1,0 +1,7 @@
+.ansoc {
+  @apply lg: order-1;
+}
+
+.title {
+  @apply font-bold text-[24px] leading-[28px];
+}

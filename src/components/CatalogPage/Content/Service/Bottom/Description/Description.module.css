@@ -1,0 +1,11 @@
+.inner {
+  @apply flex flex-col gap-[12px] lg:max-w-[500px];
+}
+
+.list {
+  @apply flex flex-col list-disc gap-[8px] pl-[20px];
+}
+
+.title {
+  @apply font-inter text-[16px] opacity-60;
+}
