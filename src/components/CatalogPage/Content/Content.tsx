@@ -7,7 +7,7 @@ const Content: FC = (): JSX.Element => {
   return (
     <>
       <section>
-        <div className={styles.container}>
+        <div className={styles.containerr}>
           <div className={styles.inner}>
             <Sidebar />
             <Service />

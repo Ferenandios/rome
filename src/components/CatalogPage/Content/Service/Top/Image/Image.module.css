@@ -3,9 +3,9 @@
 }
 
 .img {
-  @apply w-full h-full object-cover lg: w-[440px];
+  @apply w-full h-full object-cover lg:w-[440px];
 }
 
 .ansoc {
-  @apply hidden lg: flex;
+  @apply hidden lg:flex;
 }

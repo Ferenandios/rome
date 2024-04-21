@@ -1,5 +1,5 @@
-.container {
-  @apply container p-[16px] mx-auto lg: pl-0 lg:mx-0;
+.containerr {
+  @apply container p-[16px] mx-auto lg:pl-0 lg:mx-0;
 }
 
 .inner {
