@@ -6,7 +6,7 @@ import Top from "./Top/Top";
 const Service: FC = (): JSX.Element => {
   return (
     <>
-      <div className="flex flex-col gap-[8px]">
+      <div className="flex flex-col items-center gap-[8px] lg:items-start">
         <Top />
         <Line />
         <Bottom />
