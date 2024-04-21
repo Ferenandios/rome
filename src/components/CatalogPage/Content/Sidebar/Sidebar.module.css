@@ -1,0 +1,7 @@
+.ansoc {
+  @apply hidden lg:flex w-[184px] h-screen
+}
+
+.inner {
+  @apply w-full;
+}
