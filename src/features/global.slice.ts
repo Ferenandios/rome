@@ -67,7 +67,7 @@ const initialState: IState = {
     },
     {
       id: 1,
-      title: "Порошковая покраска металлических изделий",
+      title: "Порошковая покраска металлических изделий",
       image: serviceImage1,
       description: [],
       layout: [
