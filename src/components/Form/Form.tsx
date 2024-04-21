@@ -8,7 +8,7 @@ const Form: FC<{ layout?: "hidden" }> = ({ layout }): JSX.Element => {
   return (
     <>
       <div className="md:flex justify-between lg:justify-normal lg:gap-[16px]">
-        <form className="flex flex-col gap-[8px] md:w-[440px] lg:w-[358px]">
+        <form className="flex flex-col gap-[8px] md:w-[440px] lg:w-[352px]">
           <Inputs />
           <Textareas />
           <Button />
