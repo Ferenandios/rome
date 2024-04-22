@@ -6,9 +6,19 @@ import styles from "./Crumb.module.css";
 const Crumb: FC<{ crumb: ICrumb }> = ({ crumb }): JSX.Element => {
   return (
     <>
-      <NavLink className={styles.button} to={crumb.link}>
-        <span className={styles.title}>{crumb.title}</span>
-      </NavLink>
+      <div className={styles.button}>
+        <NavLink
+          to={crumb.link}
+          style={({ isActive }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+            };
+          }}
+          className={styles.title}
+        >
+          {crumb.title}
+        </NavLink>
+      </div>
     </>
   );
 };
