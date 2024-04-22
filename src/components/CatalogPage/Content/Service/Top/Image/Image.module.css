@@ -3,7 +3,7 @@
 }
 
 .img {
-  @apply w-full h-full object-cover lg:w-[440px];
+  @apply w-full h-full object-cover lg:w-[440px] 2xl:w-[500px];
 }
 
 .ansoc {

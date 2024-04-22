@@ -14,7 +14,12 @@ const Image: FC = (): JSX.Element => {
           alt="Service Image"
         />
         <div className={styles.ansoc}>
-          <Form layout="hidden" />
+          <div className="flex xl:hidden">
+            <Form layout="hidden" />
+          </div>
+          <div className="hidden xl:flex">
+            <Form />
+          </div>
         </div>
       </div>
     </>

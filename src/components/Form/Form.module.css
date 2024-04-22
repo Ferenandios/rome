@@ -3,5 +3,5 @@
 }
 
 .form {
-  @apply flex flex-col gap-[8px] md:w-[440px] lg:w-[352px];
+  @apply flex flex-col gap-[8px] md:w-[440px] lg:w-[352px] 2xl:w-[408px];
 }

@@ -3,5 +3,5 @@
 }
 
 .title {
-  @apply font-bold text-[24px] leading-[28px];
+  @apply font-bold text-[24px] leading-[28px] xl:text-[32px];
 }

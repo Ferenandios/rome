@@ -139,8 +139,6 @@ const globalSlice = createSlice({
       state.isShowMessage = !state.isShowMessage;
     },
     setCurrentService: (state, { payload }: PayloadAction<IService>) => {
-      // if length = 0
-      if (!payload.layout.length) return;
       state.currentService = payload;
     },
   },
