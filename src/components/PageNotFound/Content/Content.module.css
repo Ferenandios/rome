@@ -1,0 +1,7 @@
+.inner {
+  @apply flex justify-center items-center min-h-[500px];
+}
+
+.title {
+  @apply font-black font-inter text-[72px] text-black text-opacity-10;
+}
