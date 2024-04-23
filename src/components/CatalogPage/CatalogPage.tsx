@@ -6,6 +6,8 @@ import { useAppDispatch, useAppSelector } from "../../hooks";
 import { setCurrentService } from "../../features/global.slice";
 import Content from "./Content/Content";
 import Crumbs from "../Crumbs/Crumbs";
+import Message from "../Message/Message";
+import Modal from "../Modal/Modal";
 
 const CatalogPage: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -22,6 +24,9 @@ const CatalogPage: FC = (): JSX.Element => {
       <Crumbs />
       <Content />
       <Footer />
+
+      <Message />
+      <Modal />
     </>
   );
 };
