@@ -6,11 +6,13 @@ import "./index.css";
 import { store } from "./store/store.ts";
 import CatalogPage from "./components/CatalogPage/CatalogPage.tsx";
 import PageNotFound from "./components/PageNotFound/PageNotFound.tsx";
+import ContactsPage from "./components/ContactsPage/ContactsPage.tsx";
 
 const router = createBrowserRouter([
   { path: "/rome", element: <MainPage /> },
   { path: "/rome/catalog", element: <MainPage /> },
   { path: "/rome/catalog/:itemId/", element: <CatalogPage /> },
+  { path: "/rome/contacts", element: <ContactsPage /> },
   { path: "*", element: <PageNotFound /> },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(
