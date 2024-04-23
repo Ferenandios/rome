@@ -1,10 +1,10 @@
-import React, { FC } from "react";
-import Header from "../Header/Header";
-import Content from "./Content/Content";
+import { FC } from "react";
+import Crumbs from "../Crumbs/Crumbs";
 import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import Message from "../Message/Message";
 import Modal from "../Modal/Modal";
-import Crumbs from "../Crumbs/Crumbs";
+import Content from "./Content/Content";
 
 const ContactsPage: FC = (): JSX.Element => {
   return (
