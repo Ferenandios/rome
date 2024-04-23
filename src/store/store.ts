@@ -7,6 +7,7 @@ import messageSlice from "../features/message.slice";
 import crumbsSlice from "../features/crumbs.slice";
 import modalSlice from "../features/modal.slice";
 import formSlice from "../features/form.slice";
+import pageNotFoundSlice from "../features/pageNotFound.slice";
 
 export const store = configureStore({
   reducer: {
@@ -18,6 +19,7 @@ export const store = configureStore({
     crumbs: crumbsSlice,
     modal: modalSlice,
     form: formSlice,
+    pageNotFound: pageNotFoundSlice,
   },
 });
 
