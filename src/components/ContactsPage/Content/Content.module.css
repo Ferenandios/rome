@@ -7,5 +7,9 @@
 }
 
 .inner {
-  @apply flex flex-col gap-[16px];
+  @apply flex flex-col gap-[16px] md:flex-row md:flex-wrap;
+}
+
+.form {
+  @apply lg:order-2;
 }
