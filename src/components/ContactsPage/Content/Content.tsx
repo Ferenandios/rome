@@ -1,10 +1,11 @@
 import { FC } from "react";
+import Info from "./Info/Info";
 
 const Content: FC = (): JSX.Element => {
   return (
     <>
-      <section>
-        <h1>lmao xd</h1>
+      <section className="min-h-[500px]">
+        <Info />
       </section>
     </>
   );
