@@ -12,7 +12,9 @@ const Content: FC = (): JSX.Element => {
           <div className={styles.inner}>
             <Info />
             <Map />
-            <Form layout="hidden" />
+            <div className={styles.form}>
+              <Form layout="hidden" />
+            </div>
           </div>
         </div>
       </section>
