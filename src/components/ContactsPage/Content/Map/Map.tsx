@@ -1,8 +1,12 @@
 import { FC } from "react";
+import styles from "./Map.module.css";
 
 const Map: FC = (): JSX.Element => (
   <>
-    <div style={{ position: "relative", overflow: "hidden" }}>
+    <div
+      style={{ position: "relative", overflow: "hidden" }}
+      className={styles.map}
+    >
       <a
         href="https://yandex.ru/maps/org/remiks/1002877548/?utm_medium=mapframe&utm_source=maps"
         style={{
@@ -38,8 +42,8 @@ const Map: FC = (): JSX.Element => (
       </a>
       <iframe
         src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=76.532977%2C60.934992&mode=search&oid=1002877548&ol=biz&z=16"
-        width={560}
-        height={400}
+        width={"100%"}
+        height={"100%"}
         allowFullScreen={true}
         style={{ position: "relative" }}
       />
