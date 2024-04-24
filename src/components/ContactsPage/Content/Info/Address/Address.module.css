@@ -1,5 +1,5 @@
 .ansoc {
-  @apply flex justify-center;
+  @apply flex;
 }
 
 .text {
