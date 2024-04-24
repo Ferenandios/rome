@@ -1,0 +1,11 @@
+.section {
+  @apply min-h-[500px] py-[16px];
+}
+
+.containerr {
+  @apply container mx-auto px-[16px];
+}
+
+.inner {
+  @apply flex flex-col gap-[16px];
+}
