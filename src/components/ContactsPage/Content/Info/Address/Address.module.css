@@ -1,0 +1,7 @@
+.ansoc {
+  @apply flex justify-center;
+}
+
+.text {
+  @apply text-[12px];
+}
