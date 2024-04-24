@@ -1,0 +1,3 @@
+.map {
+  @apply md:w-[540px] md:h-[320px] lg:order-3 lg:w-[624px] lg:h-auto lg:mt-[24px] xl:w-[880px] 2xl:w-[1063px];
+}
