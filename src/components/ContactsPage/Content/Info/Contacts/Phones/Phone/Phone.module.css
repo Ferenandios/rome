@@ -1,0 +1,7 @@
+.ansoc {
+  @apply w-full;
+}
+
+.text {
+  @apply text-[14px];
+}
