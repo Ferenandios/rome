@@ -12,7 +12,9 @@ import Modal from "../Modal/Modal";
 const CatalogPage: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
   const { itemId } = useParams();
-  const { services } = useAppSelector((state) => state.global);
+  const { services, burgerIsOpen, isShowModal } = useAppSelector(
+    (state) => state.global
+  );
   const service =
     itemId !== undefined && !isNaN(+itemId) ? services[+itemId] : null;
   useEffect(() => {
@@ -20,13 +22,19 @@ const CatalogPage: FC = (): JSX.Element => {
   }, [dispatch, service]);
   return (
     <>
-      <Header />
-      <Crumbs />
-      <Content />
-      <Footer />
+      <main
+        className={`${
+          burgerIsOpen || isShowModal ? "w-screen h-screen overflow-hidden" : ""
+        }`}
+      >
+        <Header />
+        <Crumbs />
+        <Content />
+        <Footer />
 
-      <Message />
-      <Modal />
+        <Message />
+        <Modal />
+      </main>
     </>
   );
 };
