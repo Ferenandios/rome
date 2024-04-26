@@ -1,7 +1,7 @@
 .ansoc {
-  @apply absolute right-0 z-50 top-0 flex justify-end w-0 h-screen duration-500 overflow-hidden;
+  @apply absolute right-0 z-50 top-0 flex justify-end w-screen h-screen bg-white duration-500 overflow-hidden sm:w-[472px];
 }
 
 .inner {
-  @apply absolute flex flex-col w-[500px] h-screen bg-white border-b-[35px] gap-[8px] p-[16px] hsm:w-screen hsm:border-none;
+  @apply absolute flex flex-col w-screen h-screen gap-[8px] p-[16px] overflow-scroll hlg:border-b-[35px] sm:w-[472px];
 }
