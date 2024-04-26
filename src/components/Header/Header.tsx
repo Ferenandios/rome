@@ -3,14 +3,15 @@ import Burger from "./Burger/Burger";
 import Contact from "./Contact/Contact";
 import Logo from "./Logo/Logo";
 import Search from "./Search/Search";
+import styles from "./Header.module.css";
 
 const Header: FC = (): JSX.Element => {
   return (
     <>
       <header>
-        <div className="container px-[8px] mx-auto">
-          <div className="flex justify-between h-[50px] lg:h-[100px]">
-            <div className="flex w-full gap-[8px] lg:gap-[20px]">
+        <div className={styles.containerr}>
+          <div className={styles.inner}>
+            <div className={styles.stupidCodeByNikolayKnyazev}>
               <Logo />
               <Burger />
               <Search />

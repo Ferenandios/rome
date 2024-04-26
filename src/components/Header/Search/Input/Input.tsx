@@ -4,6 +4,7 @@ import {
   setSearchPlaceholder,
 } from "../../../../features/global.slice";
 import { useAppDispatch, useAppSelector } from "../../../../hooks";
+import styles from "./Input.module.css";
 
 const Input: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -17,7 +18,7 @@ const Input: FC = (): JSX.Element => {
   return (
     <>
       <input
-        className="text-[12px] w-[90%] min-w-[28px] h-[28px] bg-white rounded-full pl-[8px] pr-[27px] drop-shadow-md text-ellipsis md:w-full md:h-[30px] lg:h-[50px] lg:pr-[40px] lg:pl-[16px] xl:text-[14px]"
+        className={styles.input}
         onChange={handleChange}
         value={search}
         placeholder={placeholder}

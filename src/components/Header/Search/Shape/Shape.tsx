@@ -1,16 +1,13 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../../hooks";
+import styles from "./Shape.module.css";
 
 const Shape: FC = (): JSX.Element => {
   const { searchIcon } = useAppSelector((state) => state.header);
   return (
     <>
-      <div className="absolute right-[8px] md:right-[12px] md:right-[16px]">
-        <img
-          className="w-[12px] h-[12px] md:w-[16px] md:h-[16px]"
-          src={searchIcon}
-          alt="Shape"
-        />
+      <div className={styles.ansoc}>
+        <img className={styles.img} src={searchIcon} alt="Shape" />
       </div>
     </>
   );

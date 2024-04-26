@@ -4,6 +4,7 @@ import { toggleBurgerIsOpen } from "../../../features/global.slice";
 import { useAppDispatch, useAppSelector } from "../../../hooks";
 import Crumb from "./Crumb/Crumb";
 import { titleType } from "../../../types/Header/types";
+import styles from "./Burger.module.css";
 
 const Burger: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -11,7 +12,7 @@ const Burger: FC = (): JSX.Element => {
   const titles: titleType[] = ["Контакты", "Навигация"];
   return (
     <>
-      <div className="md:hidden z-40 flex items-center h-full">
+      <div className={styles.burger}>
         <Hamburger
           toggled={burgerIsOpen}
           toggle={() => dispatch(toggleBurgerIsOpen())}
@@ -21,9 +22,8 @@ const Burger: FC = (): JSX.Element => {
         />
       </div>
       <nav
-        className={`fixed z-30 top-0 left-0 touch-none flex flex-col ${
-          burgerIsOpen ? "w-screen" : "w-0"
-        } h-screen bg-white gap-[8px] overflow-hidden origin-right duration-500`}
+        style={{ width: burgerIsOpen ? "100vw" : "" }}
+        className={styles.inner}
       >
         {titles.map((title, index) => (
           <Crumb key={index} title={title} />

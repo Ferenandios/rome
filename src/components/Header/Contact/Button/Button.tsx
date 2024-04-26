@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { toggleIsShowModal } from "../../../../features/global.slice";
 import { useAppDispatch, useAppSelector } from "../../../../hooks";
+import styles from './Button.module.css'
 
 const Button: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -11,11 +12,11 @@ const Button: FC = (): JSX.Element => {
   };
   return (
     <>
-      <div className="hidden md:flex items-center h-full">
+      <div className={styles.ansoc}>
         <button
           onMouseUp={handleCLick}
           style={{ backgroundColor: colorTheme }}
-          className="text-white text-[14px] min-w-[177px] max-w-[290px] h-[30px] rounded-full whitespace-nowrap overflow-hidden lg:h-[50px]"
+          className={styles.inner}
         >
           {buttonText}
         </button>
