@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { useAppSelector } from "../../hooks";
 import Content from "./Content/Content";
 import Shit from "./Shit/Shit";
+import { useAppSelector } from "../../hooks";
 
 const Modal: FC = (): JSX.Element => {
   const { isShowModal } = useAppSelector((state) => state.global);
@@ -9,12 +9,10 @@ const Modal: FC = (): JSX.Element => {
     <>
       <Shit />
       <div
-        style={{ width: isShowModal ? "100vw" : "0vw" }}
-        className="absolute z-50 top-0 flex justify-end w-screen h-screen duration-500"
+        style={{ width: isShowModal ? "500px" : "0" }}
+        className="absolute right-0 z-50 top-0 flex justify-end w-0 h-screen duration-500 overflow-hidden"
       >
-        <div className="relative w-full h-full">
-          <Content />
-        </div>
+        <Content />
       </div>
     </>
   );
