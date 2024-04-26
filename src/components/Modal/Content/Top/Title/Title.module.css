@@ -1,0 +1,7 @@
+.ansoc {
+  @apply w-full border-b pb-[12px];
+}
+
+.title {
+  @apply font-bold text-[24px] whitespace-nowrap;
+}
