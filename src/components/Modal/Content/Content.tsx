@@ -8,10 +8,7 @@ const Content: FC = (): JSX.Element => {
   const { isShowModal, colorTheme } = useAppSelector((state) => state.global);
   return (
     <>
-      <div
-        style={{ width: isShowModal ? "500px" : "0" }}
-        className={styles.ansoc}
-      >
+      <div style={{ width: !isShowModal ? "0" : "" }} className={styles.ansoc}>
         <div style={{ borderColor: colorTheme }} className={styles.inner}>
           <Top />
           <Inner />
