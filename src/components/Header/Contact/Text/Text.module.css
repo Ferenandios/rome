@@ -1,0 +1,7 @@
+.ansoc {
+  @apply hidden lg:flex items-center h-full;
+}
+
+.inner {
+  @apply flex flex-col justify-between items-end h-[50px];
+}
