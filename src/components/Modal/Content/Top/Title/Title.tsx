@@ -10,7 +10,7 @@ const Title: FC = (): JSX.Element => {
         style={{ borderColor: colorTheme }}
         className="w-full border-b pb-[12px] "
       >
-        <h1 className="font-bold text-[24px]">{title}</h1>
+        <h1 className="font-bold text-[24px] whitespace-nowrap">{title}</h1>
       </div>
     </>
   );
