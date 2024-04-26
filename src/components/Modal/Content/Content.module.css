@@ -3,5 +3,5 @@
 }
 
 .inner {
-  @apply absolute flex flex-col w-[500px] h-screen bg-white border-b-[35px] gap-[8px] p-[16px];
+  @apply absolute flex flex-col w-[500px] h-screen bg-white border-b-[35px] gap-[8px] p-[16px] hsm:w-screen hsm:border-none;
 }
