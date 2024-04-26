@@ -2,11 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { type IState } from "../types/Footer/types";
 
 const initialState: IState = {
-  categories: [
-    { id: 0, text: "Главная", link: "/" },
-    { id: 1, text: "Каталог оборудования", link: "/catalog" },
-    { id: 2, text: "Обратная связь", link: "/contacts" },
-  ],
+  categoryTitle: "Категории",
   contacts: [
     {
       id: 0,
