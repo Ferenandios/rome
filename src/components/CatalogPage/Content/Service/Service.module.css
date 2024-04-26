@@ -1,11 +1,13 @@
 @layer shadow-left {
-  .shadow-left {
-    -webkit-box-shadow: -10px 0px 7px -5px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: -10px 0px 7px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: -10px 0px 7px -5px rgba(0, 0, 0, 0.1);
+  @media (min-width: 1024px) {
+    .lg\:shadow-left {
+      -webkit-box-shadow: -10px 0px 7px -5px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: -10px 0px 7px -5px rgba(0, 0, 0, 0.1);
+      box-shadow: -10px 0px 7px -5px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
 .inner {
-  @apply flex flex-col items-center gap-[8px] pl-[16px] pt-[16px] pb-[16px] shadow-left lg:items-start;
+  @apply flex flex-col items-center gap-[8px] pl-[16px] pt-[16px] pb-[16px] lg:shadow-left lg:items-start;
 }
