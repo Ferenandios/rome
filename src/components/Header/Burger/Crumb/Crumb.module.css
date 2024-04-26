@@ -1,0 +1,7 @@
+.inner {
+  @apply flex flex-col pl-[30px] first:pt-[40px];
+}
+
+.list {
+  @apply flex flex-col;
+}
