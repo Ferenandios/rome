@@ -1,0 +1,7 @@
+.ansoc {
+  @apply hidden md:flex items-center h-full;
+}
+
+.inner {
+  @apply text-white text-[14px] min-w-[177px] max-w-[290px] h-[30px] rounded-full whitespace-nowrap overflow-hidden lg:h-[50px];
+}
