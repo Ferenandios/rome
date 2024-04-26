@@ -8,7 +8,7 @@ export default {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
-      hsm: { raw: "(max-height: 480px)" },
+      hlg: { raw: "(min-height: 1024px)" },
     },
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
