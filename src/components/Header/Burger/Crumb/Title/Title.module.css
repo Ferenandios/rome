@@ -1,0 +1,7 @@
+.ansoc {
+  @apply w-[calc(100vw-34px)];
+}
+
+.title {
+  @apply font-semibold text-[18px];
+}
