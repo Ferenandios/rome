@@ -1,0 +1,3 @@
+.inner {
+  @apply list-decimal flex flex-col gap-[8px] pl-[16px];
+}
