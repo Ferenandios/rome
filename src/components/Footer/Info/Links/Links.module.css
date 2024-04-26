@@ -1,7 +1,0 @@
-.ansoc {
-  @apply flex flex-col gap-[4px] lg:max-w-[200px] lg:whitespace-nowrap overflow-hidden;
-}
-
-.link {
-  @apply text-[12px];
-}
