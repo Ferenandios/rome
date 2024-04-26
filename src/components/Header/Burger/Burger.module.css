@@ -1,0 +1,7 @@
+.burger {
+  @apply md:hidden z-40 flex items-center h-full;
+}
+
+.inner {
+  @apply fixed z-30 top-0 left-0 touch-none flex flex-col w-0 h-screen bg-white gap-[8px] overflow-hidden origin-right duration-500;
+}
