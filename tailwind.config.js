@@ -7,6 +7,11 @@ export default {
       inter: ["Inter", "sans-serif"],
     },
   },
-  extend: {},
+  extend: {
+    screens: {
+      tall: { raw: "(min-height: 800px)" },
+      // => @media (min-height: 800px) { ... }
+    },
+  },
   plugins: [],
 };
