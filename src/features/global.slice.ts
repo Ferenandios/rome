@@ -111,6 +111,11 @@ const initialState: IState = {
   colorTheme: "#4D7E6C",
   isShowModal: false,
   isShowMessage: false,
+  crumbs: [
+    { id: 0, text: "Главная", link: "/rome" },
+    { id: 1, text: "Каталог оборудования", link: "/rome/catalog" },
+    { id: 2, text: "Обратная связь", link: "/rome/contacts" },
+  ],
 };
 
 const globalSlice = createSlice({
