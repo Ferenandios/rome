@@ -18,6 +18,12 @@ interface IContacts {
   emails: string[];
 }
 
+export interface ICrumb {
+  id: number;
+  text: string;
+  link: string;
+}
+
 export interface IState {
   showedPage: "main" | "catalog";
   search: string;
@@ -32,6 +38,7 @@ export interface IState {
   colorTheme: string;
   isShowModal: boolean;
   isShowMessage: boolean;
+  crumbs: ICrumb[];
 }
 
 export interface IFooterLinksText {
