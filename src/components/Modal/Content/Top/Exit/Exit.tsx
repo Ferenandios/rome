@@ -11,7 +11,7 @@ const Exit: FC = (): JSX.Element => {
   return (
     <>
       <button
-        className="relative top-0 right-0 w-[32px] h-[32px]"
+        className="absolute top-0 right-0 w-[32px] h-[32px]"
         onMouseUp={handleClick}
       >
         <img className="w-full h-full" src={exitIcon} alt="Exit" />
