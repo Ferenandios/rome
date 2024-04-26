@@ -8,10 +8,12 @@ const Crumbs: FC = (): JSX.Element => {
   return (
     <>
       <section className={styles.section}>
-        <div className={styles.inner}>
-          {crumbs.map((crumb) => (
-            <Crumb key={crumb.id} crumb={crumb} />
-          ))}
+        <div className="container mx-auto">
+          <div className={styles.inner}>
+            {crumbs.map((crumb) => (
+              <Crumb key={crumb.id} crumb={crumb} />
+            ))}
+          </div>
         </div>
       </section>
     </>
