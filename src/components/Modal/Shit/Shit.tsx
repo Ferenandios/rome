@@ -6,7 +6,7 @@ const Shit: FC = (): JSX.Element => {
   return (
     <>
       {isShowModal && (
-        <div className="absolute w-full h-full bg-black bg-opacity-40"></div>
+        <div className="absolute top-0 w-full h-full bg-black bg-opacity-40"></div>
       )}
     </>
   );
