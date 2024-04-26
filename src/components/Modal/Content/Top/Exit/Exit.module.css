@@ -1,0 +1,7 @@
+.button {
+  @apply absolute top-0 right-0 w-[32px] h-[32px];
+}
+
+.img {
+  @apply w-full h-full;
+}
