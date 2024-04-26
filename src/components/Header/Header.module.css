@@ -1,0 +1,11 @@
+.containerr {
+  @apply container px-[8px] mx-auto;
+}
+
+.inner {
+  @apply flex justify-between h-[50px] lg:h-[100px];
+}
+
+.stupidCodeByNikolayKnyazev {
+  @apply flex w-full gap-[8px] lg:gap-[20px];
+}
