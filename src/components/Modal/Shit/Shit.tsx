@@ -1,15 +1,10 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../hooks";
+import styles from "./Shit.module.css";
 
 const Shit: FC = (): JSX.Element => {
   const { isShowModal } = useAppSelector((state) => state.global);
-  return (
-    <>
-      {isShowModal && (
-        <div className="absolute top-0 w-full h-full bg-black bg-opacity-40"></div>
-      )}
-    </>
-  );
+  return <>{isShowModal && <div className={styles.shit}></div>}</>;
 };
 
 export default Shit;

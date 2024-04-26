@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { toggleIsShowModal } from "../../../../../features/global.slice";
 import { useAppDispatch, useAppSelector } from "../../../../../hooks";
+import styles from "./Exit.module.css";
 
 const Exit: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -10,11 +11,8 @@ const Exit: FC = (): JSX.Element => {
   };
   return (
     <>
-      <button
-        className="absolute top-0 right-0 w-[32px] h-[32px]"
-        onMouseUp={handleClick}
-      >
-        <img className="w-full h-full" src={exitIcon} alt="Exit" />
+      <button onMouseUp={handleClick} className={styles.button}>
+        <img className={styles.img} src={exitIcon} alt="Exit" />
       </button>
     </>
   );

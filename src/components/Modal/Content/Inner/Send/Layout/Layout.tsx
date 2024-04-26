@@ -1,12 +1,13 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../../../../hooks";
 import Item from "./Item/Item";
+import styles from "./Layout.module.css";
 
 const Layout: FC = (): JSX.Element => {
   const { layout } = useAppSelector((state) => state.modal);
   return (
     <>
-      <ol className="list-decimal flex flex-col gap-[8px] pl-[16px]">
+      <ol className={styles.inner}>
         {layout.map((item, index) => (
           <Item key={index} item={item} />
         ))}

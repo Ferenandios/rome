@@ -1,4 +1,5 @@
 import { FC } from "react";
+import styles from "./Phone.module.css";
 
 const Phone: FC<{ phone: string }> = ({ phone }): JSX.Element => {
   // Update phone number to +X (XXX) XXX-XX-XX
@@ -24,7 +25,7 @@ const Phone: FC<{ phone: string }> = ({ phone }): JSX.Element => {
   };
   return (
     <>
-      <h1 className="text-[20px]">{modifyString(phone)}</h1>
+      <h1 className={styles.phone}>{modifyString(phone)}</h1>
     </>
   );
 };
