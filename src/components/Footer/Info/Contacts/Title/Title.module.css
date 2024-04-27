@@ -1,0 +1,3 @@
+.title {
+  @apply font-bold text-end text-[12px] tracking-[5%] md:text-start;
+}
