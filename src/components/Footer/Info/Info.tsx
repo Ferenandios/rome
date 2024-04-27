@@ -1,16 +1,14 @@
 import { FC } from "react";
 import Categories from "./Categories/Categories";
 import styles from "./Info.module.css";
+import Contacts from "./Contacts/Contacts";
 
 const Info: FC = (): JSX.Element => {
   return (
     <>
       <div className={styles.inner}>
         <Categories />
-        {/* Create Contacts component like
-        upper Categories-component
-        BLESSRNG do not be a down
-        please */}
+        <Contacts />
       </div>
     </>
   );
