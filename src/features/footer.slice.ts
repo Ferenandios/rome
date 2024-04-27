@@ -3,6 +3,7 @@ import { type IState } from "../types/Footer/types";
 
 const initialState: IState = {
   categoryTitle: "Категории",
+  contactsTitle: "Контакты",
   contacts: [
     {
       id: 0,
