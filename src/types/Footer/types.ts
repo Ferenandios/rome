@@ -8,5 +8,6 @@ export interface IElement {
 
 export interface IState {
   categoryTitle: string;
+  contactsTitle: string;
   contacts: IElement[];
 }
