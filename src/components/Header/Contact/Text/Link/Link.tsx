@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { IElement } from "../../../../../types/Header/types";
+import { type IElement } from "../../../../../types/Header/types";
 import styles from "./Link.module.css";
 
 const Link: FC<{ contact: IElement }> = ({ contact }): JSX.Element => {
