@@ -4,7 +4,7 @@ import Crumb from "./Crumb/Crumb";
 import styles from "./Crumbs.module.css";
 
 const Crumbs: FC = (): JSX.Element => {
-  const { crumbs } = useAppSelector((state) => state.crumbs);
+  const { crumbs } = useAppSelector((state) => state.global);
   return (
     <>
       <section className={styles.section}>
