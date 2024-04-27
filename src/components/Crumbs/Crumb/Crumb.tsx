@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { ICrumb } from "../../../types/Crumbs/types";
 import { NavLink } from "react-router-dom";
 import styles from "./Crumb.module.css";
+import { ICrumb } from "../../../types/types";
 
 const Crumb: FC<{ crumb: ICrumb }> = ({ crumb }): JSX.Element => {
   return (
@@ -16,7 +16,7 @@ const Crumb: FC<{ crumb: ICrumb }> = ({ crumb }): JSX.Element => {
           }}
           className={styles.title}
         >
-          {crumb.title}
+          {crumb.text}
         </NavLink>
       </div>
     </>
