@@ -1,0 +1,3 @@
+.inner {
+  @apply text-end flex flex-col md:text-start xl:flex-row xl:gap-[32px];
+}
