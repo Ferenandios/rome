@@ -1,0 +1,7 @@
+.ansoc {
+  @apply absolute right-[8px] md:right-[12px] lg:right-[16px];
+}
+
+.img {
+  @apply w-[12px] h-[12px] md:w-[16px] md:h-[16px];
+}
