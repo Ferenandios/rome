@@ -14,7 +14,7 @@ const Input: FC = (): JSX.Element => {
   };
   useEffect(() => {
     dispatch(setSearchPlaceholder());
-  }, []);
+  }, [dispatch]);
   return (
     <>
       <input
