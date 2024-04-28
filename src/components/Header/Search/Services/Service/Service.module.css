@@ -1,0 +1,7 @@
+.inner {
+  @apply flex items-center w-full border-t border-black border-opacity-10 first:border-t-0 p-[4px];
+}
+
+.title {
+  @apply text-[12px];
+}
