@@ -1,14 +1,14 @@
 import { FC } from "react";
-import Input from "./Input/Input";
-import Shape from "./Shape/Shape";
+import Inner from "./Inner/Inner";
+import Services from "./Services/Services";
 import styles from "./Search.module.css";
 
 const Search: FC = (): JSX.Element => {
   return (
     <>
-      <div className={styles.ansoc}>
-        <Input />
-        <Shape />
+      <div className={styles.inner}>
+        <Inner />
+        <Services />
       </div>
     </>
   );
