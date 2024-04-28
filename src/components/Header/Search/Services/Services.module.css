@@ -1,0 +1,3 @@
+.inner {
+  @apply absolute top-[39px] z-10 flex flex-col bg-white rounded-md;
+}
