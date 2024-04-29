@@ -1,0 +1,3 @@
+.title {
+  @apply whitespace-nowrap font-bold text-[12px] tracking-[5%];
+}
