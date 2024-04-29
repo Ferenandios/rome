@@ -1,5 +1,8 @@
 import { FC, useEffect } from "react";
-import { toggleIsShowMessage } from "../../features/global.slice";
+import {
+  toggleIsShowMessage,
+  toggleIsShowModal,
+} from "../../features/global.slice";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import Animation from "./Animation/Animation";
 import Button from "./Button/Button";
@@ -11,11 +14,15 @@ const Message: FC = (): JSX.Element => {
     setTimeout(() => {
       dispatch(toggleIsShowMessage());
     }, 3000);
-  }, []);
+  }, [dispatch]);
+  const handleClick = () => {
+    dispatch(toggleIsShowModal());
+  };
   return (
     <>
       {isShowMessage && (
-        <div
+        <button
+          onClick={handleClick}
           style={{ background: colorTheme + "33" }}
           className="md:hidden animate-widgetVisible fixed z-20 bottom-[35px] right-[35px] flex justify-center items-center bg-opacity-20 w-[69px] h-[69px] rounded-full"
         >
@@ -23,7 +30,7 @@ const Message: FC = (): JSX.Element => {
             <Animation />
             <Button />
           </div>
-        </div>
+        </button>
       )}
     </>
   );
