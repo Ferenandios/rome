@@ -3,5 +3,5 @@
 }
 
 .title {
-  @apply text-[12px] w-full h-full;
+  @apply text-[12px] w-full h-full md:text-[14px] lg:text-[~16px];
 }
