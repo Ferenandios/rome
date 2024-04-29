@@ -12,9 +12,15 @@ const Bottom: FC = (): JSX.Element => {
     <>
       <div className={styles.inner}>
         <Description />
-        <div className="flex lg:hidden">
-          {description.length === 0 && <Form />}
+        <div style={{ display: description.length > 0 ? "flex" : "none" }}>
+          <Form />
         </div>
+
+        {description.length === 0 && (
+          <div className="flex lg:hidden">
+            <Form />
+          </div>
+        )}
       </div>
     </>
   );
