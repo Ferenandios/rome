@@ -1,5 +1,5 @@
 .ansoc {
-  @apply flex justify-center w-full mt-[16px] md:mt-0 lg:justify-end lg:w-[350px];
+  @apply flex justify-center w-full mt-[16px] md:mt-0 md:justify-end lg:w-[350px];
 }
 
 .text {
