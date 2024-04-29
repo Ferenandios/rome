@@ -35,6 +35,7 @@ export interface IState {
   companyName: string;
   companyLogo: string;
   companyAddress: string;
+  sendTo: string;
   colorTheme: string;
   isShowModal: boolean;
   isShowMessage: boolean;
