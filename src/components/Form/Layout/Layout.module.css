@@ -1,3 +1,3 @@
 .list {
-  @apply flex flex-col gap-[8px] list-decimal pt-[8px] px-[16px] md:w-[280px] md:pt-[20px] xl:w-[234px] xl:pr-0 2xl:w-[380px];
+  @apply flex flex-col gap-[8px] list-decimal pt-[8px] pl-[32px] md:w-[280px] md:pt-[20px] xl:w-[234px] xl:pr-0 2xl:w-[380px];
 }
