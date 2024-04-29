@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from "../../../hooks";
 import Crumb from "./Crumb/Crumb";
 import { titleType } from "../../../types/Header/types";
 import styles from "./Burger.module.css";
+import Info from "./Info/Info";
 
 const Burger: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -25,9 +26,7 @@ const Burger: FC = (): JSX.Element => {
         style={{ width: burgerIsOpen ? "100vw" : "" }}
         className={styles.inner}
       >
-        {titles.map((title, index) => (
-          <Crumb key={index} title={title} />
-        ))}
+        <Info />
       </nav>
     </>
   );
