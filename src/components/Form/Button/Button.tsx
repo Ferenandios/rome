@@ -3,10 +3,10 @@ import { useAppSelector } from "../../../hooks";
 import styles from "./Button.module.css";
 
 const Button: FC = (): JSX.Element => {
-  const { colorTheme } = useAppSelector((state) => state.global);
+  const { sendTo, colorTheme } = useAppSelector((state) => state.global);
   const { buttonText } = useAppSelector((state) => state.form);
   const handleClick = () => {
-    alert(true);
+    alert(sendTo);
   };
   return (
     <>
