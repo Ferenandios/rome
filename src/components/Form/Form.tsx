@@ -1,9 +1,9 @@
 import { FC } from "react";
 import Button from "./Button/Button";
+import styles from "./Form.module.css";
 import Inputs from "./Inputs/Inputs";
 import Layout from "./Layout/Layout";
 import Textareas from "./Textareas/Textareas";
-import styles from "./Form.module.css";
 
 const Form: FC<{ layout?: "hidden" }> = ({ layout }): JSX.Element => {
   return (
