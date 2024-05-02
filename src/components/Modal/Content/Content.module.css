@@ -3,5 +3,5 @@
 }
 
 .inner {
-  @apply absolute flex flex-col w-screen h-screen gap-[8px] p-[16px] overflow-scroll hlg:border-b-[35px] sm:w-[472px];
+  @apply absolute flex flex-col w-screen h-screen gap-[8px] p-[16px] overflow-y-scroll hlg:border-b-[35px] sm:w-[472px];
 }
