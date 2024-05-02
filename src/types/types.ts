@@ -24,6 +24,13 @@ export interface ICrumb {
   link: string;
 }
 
+export interface ISubmit {
+  name: string;
+  email: string;
+  phone: string;
+  text: string;
+}
+
 export interface IState {
   showedPage: "main" | "catalog";
   search: string;
@@ -40,6 +47,7 @@ export interface IState {
   isShowModal: boolean;
   isShowMessage: boolean;
   crumbs: ICrumb[];
+  submit: ISubmit;
 }
 
 export interface IFooterLinksText {
