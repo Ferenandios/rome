@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Crumb.module.css";
-import { ICrumb } from "../../../../../../types/types";
+import { type ICrumb } from "../../../../../../../types/types";
 
 const Crumb: FC<{ crumb: ICrumb }> = ({ crumb }): JSX.Element => {
   return (
