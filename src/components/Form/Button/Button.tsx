@@ -1,12 +1,38 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../hooks";
 import styles from "./Button.module.css";
+import axios from "axios";
 
 const Button: FC = (): JSX.Element => {
-  const { sendTo, colorTheme } = useAppSelector((state) => state.global);
+  const { text, email, tel, message } = useAppSelector(
+    (state) => state.global.submit
+  );
+  const { colorTheme } = useAppSelector((state) => state.global);
   const { buttonText } = useAppSelector((state) => state.form);
-  const handleClick = () => {
-    alert(sendTo);
+  const baseUrl = "http://localhost:8000";
+  const handleClick = async () => {
+    const subject: string = `Письмо от ${text}`;
+    const mailMessage: string = `
+    Имя: ${text}
+    Почта: ${email}
+    Телефон: ${tel}
+    Комментарий: ${message}
+    `;
+    const dataSend = {
+      email: email,
+      subject: subject,
+      message: mailMessage,
+    };
+
+    await axios
+      .post(`${baseUrl}/email/sendEmail`, dataSend)
+      // HANDLING ERRORS
+      .then((res) => {
+        console.log(res);
+        if (res.status > 199 && res.status < 300) {
+          alert("Send Successfully !");
+        }
+      });
   };
   return (
     <>
