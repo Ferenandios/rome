@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { type IState } from "../types/types";
+import { ISubmit, type IState } from "../types/types";
 import { IService } from "./../types/types";
 
 import companyLogoAsset from "/logo.jpg";
@@ -135,10 +135,10 @@ const initialState: IState = {
     { id: 2, text: "Обратная связь", link: "/rome/contacts" },
   ],
   submit: {
-    name: "",
-    email: "",
-    phone: "",
     text: "",
+    email: "",
+    tel: "",
+    message: "",
   },
 };
 
@@ -170,6 +170,12 @@ const globalSlice = createSlice({
     setCurrentService: (state, { payload }: PayloadAction<IService>) => {
       state.currentService = payload;
     },
+    setSubmitItem: (
+      state,
+      { payload }: PayloadAction<{ key: keyof ISubmit; value: string }>
+    ) => {
+      state.submit[payload.key] = payload.value;
+    },
   },
 });
 
@@ -181,4 +187,5 @@ export const {
   toggleIsShowModal,
   toggleIsShowMessage,
   setCurrentService,
+  setSubmitItem,
 } = globalSlice.actions;
