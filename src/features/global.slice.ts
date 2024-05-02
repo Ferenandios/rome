@@ -134,6 +134,12 @@ const initialState: IState = {
     { id: 1, text: "Каталог оборудования", link: "/rome/catalog" },
     { id: 2, text: "Обратная связь", link: "/rome/contacts" },
   ],
+  submit: {
+    name: "",
+    email: "",
+    phone: "",
+    text: "",
+  },
 };
 
 const globalSlice = createSlice({
