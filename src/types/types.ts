@@ -25,10 +25,10 @@ export interface ICrumb {
 }
 
 export interface ISubmit {
-  name: string;
-  email: string;
-  phone: string;
   text: string;
+  email: string;
+  tel: string;
+  message: string;
 }
 
 export interface IState {
