@@ -8,6 +8,7 @@ import Content from "./Content/Content";
 import Crumbs from "../Crumbs/Crumbs";
 import Message from "../Message/Message";
 import Modal from "../Modal/Modal";
+import styles from "./CatalogPage.module.css";
 
 const CatalogPage: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -22,11 +23,7 @@ const CatalogPage: FC = (): JSX.Element => {
   }, [dispatch, service]);
   return (
     <>
-      <main
-        className={`${
-          burgerIsOpen || isShowModal ? "w-screen h-screen overflow-hidden" : ""
-        }`}
-      >
+      <main className={`${burgerIsOpen || isShowModal ? styles.inner : ""}`}>
         <Header />
         <Crumbs />
         <Content />
