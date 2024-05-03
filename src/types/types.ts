@@ -32,7 +32,6 @@ export interface ISubmit {
 }
 
 export interface IState {
-  showedPage: "main" | "catalog";
   search: string;
   placeholder: string;
   services: IService[];
@@ -42,24 +41,9 @@ export interface IState {
   companyName: string;
   companyLogo: string;
   companyAddress: string;
-  sendTo: string;
   colorTheme: string;
   isShowModal: boolean;
   isShowMessage: boolean;
   crumbs: ICrumb[];
   submit: ISubmit;
-}
-
-export interface IFooterLinksText {
-  text: string;
-}
-
-export interface IFooterLinksStyles {
-  text: "left" | "right";
-}
-
-export interface IFooterLinksList {
-  title: string;
-  text: IFooterLinksText[];
-  styles: IFooterLinksStyles;
 }
