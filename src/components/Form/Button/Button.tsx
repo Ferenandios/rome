@@ -19,7 +19,6 @@ const Button: FC = (): JSX.Element => {
     Комментарий: ${message}
     `;
     const dataSend = {
-      email: email,
       subject: subject,
       message: mailMessage,
     };
