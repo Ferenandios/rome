@@ -1,0 +1,7 @@
+.ansoc {
+  @apply w-full h-[200px] bg-black bg-opacity-10 sm:h-[400px] md:h-[200px];
+}
+
+.img {
+  @apply w-full h-full sm:object-cover;
+}
