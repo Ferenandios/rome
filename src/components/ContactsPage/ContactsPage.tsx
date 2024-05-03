@@ -6,16 +6,13 @@ import Message from "../Message/Message";
 import Modal from "../Modal/Modal";
 import Content from "./Content/Content";
 import { useAppSelector } from "../../hooks";
+import styles from "./ContactsPage.module.css";
 
 const ContactsPage: FC = (): JSX.Element => {
   const { burgerIsOpen, isShowModal } = useAppSelector((state) => state.global);
   return (
     <>
-      <main
-        className={`${
-          burgerIsOpen || isShowModal ? "w-screen h-screen overflow-hidden" : ""
-        }`}
-      >
+      <main className={`${burgerIsOpen || isShowModal ? styles.inner : ""}`}>
         <Header />
         <Crumbs />
         <Content />
