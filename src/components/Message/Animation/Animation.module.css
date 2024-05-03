@@ -1,0 +1,23 @@
+@layer animate-widgetPulse {
+  @keyframes widgetPulse {
+    50% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: scale(2, 2);
+      transform: scale(2, 2);
+      opacity: 0;
+    }
+  }
+
+  .animate-widgetPulse {
+    animation: widgetPulse infinite 1.5s;
+  }
+}
+
+.neurosama {
+  @apply z-10 animate-widgetPulse absolute top-0 left-0 bottom-0 right-0 border-[1px] rounded-[50%] cursor-pointer;
+}
