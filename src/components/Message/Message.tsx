@@ -6,6 +6,7 @@ import {
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import Animation from "./Animation/Animation";
 import Button from "./Button/Button";
+import styles from "./Message.module.css";
 
 const Message: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -24,9 +25,9 @@ const Message: FC = (): JSX.Element => {
         <button
           onClick={handleClick}
           style={{ background: colorTheme + "33" }}
-          className="md:hidden animate-widgetVisible fixed z-20 bottom-[35px] right-[35px] flex justify-center items-center bg-opacity-20 w-[69px] h-[69px] rounded-full"
+          className={styles.ansoc}
         >
-          <div className="relative w-[56px] h-[56px]">
+          <div className={styles.inner}>
             <Animation />
             <Button />
           </div>
