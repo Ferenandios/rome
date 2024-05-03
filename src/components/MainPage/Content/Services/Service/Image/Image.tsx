@@ -1,13 +1,14 @@
 import { FC } from "react";
 import { useAppSelector } from "../../../../../../hooks";
+import styles from './Image.module.css'
 
 const Image: FC<{ serivceId: number }> = ({ serivceId }): JSX.Element => {
   const { image } = useAppSelector((state) => state.global.services[serivceId]);
   return (
     <>
-      <div className="w-full h-[200px] bg-black bg-opacity-10 sm:h-[400px] md:h-[200px]">
+      <div className={styles.ansoc}>
         <img
-          className="w-full h-full sm:object-cover"
+          className={styles.img}
           src={image}
           alt="Service Image"
         />
