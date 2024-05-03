@@ -9,6 +9,7 @@ export default {
       xl: "1280px",
       "2xl": "1536px",
       hlg: { raw: "(min-height: 1024px)" },
+      hxl: { raw: "(min-height: 1200px)" },
     },
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
