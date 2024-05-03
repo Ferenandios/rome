@@ -2,12 +2,13 @@ import { FC } from "react";
 import Image from "./Image/Image";
 import Title from "./Title/Title";
 import { Link } from "react-router-dom";
+import styles from './Service.module.css'
 
 const Service: FC<{ serviceId: number }> = ({ serviceId }): JSX.Element => {
   return (
     <>
       <Link
-        className="w-[200px] drop-shadow-md sm:w-[calc(100%-60px)] md:w-[200px]"
+        className={styles.inner}
         to={`/rome/catalog/${serviceId}`}
       >
         <Image serivceId={serviceId} />
