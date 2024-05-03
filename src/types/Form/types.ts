@@ -10,7 +10,6 @@ export interface IInput {
 export interface ITextarea {
   id: number;
   title: string;
-  text: string;
   placeholder: string;
 }
 
