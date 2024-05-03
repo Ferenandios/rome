@@ -1,0 +1,7 @@
+.button {
+  @apply z-20 flex justify-center items-center w-full h-full rounded-full cursor-pointer;
+}
+
+.img {
+  @apply w-[47%];
+}
