@@ -1,47 +1,33 @@
-@-webkit-keyframes socialRotate {
+@keyframes widgetVisible {
   0% {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg)
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  30.001% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  62.999% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 
   100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg)
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
-@keyframes socialRotate {
-  0% {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg)
-  }
-
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg)
-  }
+.animate-widgetVisible {
+  animation: widgetVisible 1s ease-out forwards 1;
 }
 
-@-webkit-keyframes socialRotateBack {
-  0% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg)
-  }
-
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg)
-  }
+.ansoc {
+  @apply md:hidden animate-widgetVisible fixed z-20 bottom-[35px] right-[35px] flex justify-center items-center bg-opacity-20 w-[69px] h-[69px] rounded-full;
 }
 
-@keyframes socialRotateBack {
-  0% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg)
-  }
-
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg)
-  }
+.inner {
+  @apply relative w-[56px] h-[56px];
 }
