@@ -1,0 +1,7 @@
+.ansoc {
+  @apply flex justify-center items-center w-full h-[60px] bg-white overflow-hidden sm:h-[75px] md:h-[60px];
+}
+
+.title {
+  @apply font-bold text-[14px] text-center max-h-full leading-[16px] sm:text-[18px] md:text-[14px];
+}
