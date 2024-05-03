@@ -17,7 +17,6 @@ const initialState: IState = {
       id: 0,
       placeholder: "Введите Ваш комментарий здесь",
       title: "Комментарий",
-      text: "",
     },
   ],
   buttonText: "Отправить",
