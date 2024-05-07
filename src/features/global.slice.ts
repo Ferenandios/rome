@@ -128,9 +128,9 @@ const initialState: IState = {
   isShowModal: false,
   isShowMessage: false,
   crumbs: [
-    { id: 0, text: "Главная", link: "/rome" },
-    { id: 1, text: "Каталог оборудования", link: "/rome/catalog" },
-    { id: 2, text: "Обратная связь", link: "/rome/contacts" },
+    { id: 0, text: "Главная", link: "/" },
+    { id: 1, text: "Каталог оборудования", link: "/catalog" },
+    { id: 2, text: "Обратная связь", link: "/contacts" },
   ],
   submit: {
     text: "",
