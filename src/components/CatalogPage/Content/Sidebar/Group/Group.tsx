@@ -9,7 +9,7 @@ const Group: FC<{ service: IService }> = ({ service }): JSX.Element => {
   return (
     <>
       <NavLink
-        to={`/rome/catalog/${service.id}`}
+        to={`/catalog/${service.id}`}
         style={({ isActive }) => ({
           backgroundColor: isActive ? colorTheme : "",
           color: isActive ? "white" : "",
