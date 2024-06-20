@@ -62,6 +62,12 @@ const initialState: IState = {
         "Если вам нравится наше предложение, подтвердите заказ, и мы приступим к работе.",
         "Мы организуем доставку вашего заказа в удобное для вас место.",
       ],
+      galleryItems: [
+        { id: 0, image: "https://placehold.co/272x200" },
+        { id: 1, image: "https://placehold.co/272x272" },
+        { id: 2, image: "https://placehold.co/272x340" },
+        { id: 3, image: "https://placehold.co/272x220" },
+      ],
     },
     {
       id: 1,
@@ -82,7 +88,7 @@ const initialState: IState = {
             "Экологичность. Покрытия не содержат токсинов и тяжелых металлов, опасных для здоровья людей. С ними могут без последствий контактировать дети и аллергики",
             "Широкий выбор цветов и оттенков",
             "Разнообразие вариантов декора. Можно создать как гладкое покрытие, так и шагрень, антик, муар и другие разновидности отделки",
-            "•	Устойчивость к механическим повреждениям. Слой краски сохраняется даже при деформации поверхности",
+            "Устойчивость к механическим повреждениям. Слой краски сохраняется даже при деформации поверхности",
           ],
         },
       ],
@@ -91,6 +97,11 @@ const initialState: IState = {
         "Печь оборудованна специльными направляющими для погрузки изделий массой до 300 кг",
         "Время выполнения заказов от 1 до 3 рабочих дней",
       ],
+      galleryItems: [
+        { id: 0, image: "https://placehold.co/272x200" },
+        { id: 1, image: "https://placehold.co/272x272" },
+        { id: 2, image: "https://placehold.co/272x272" },
+      ],
     },
     {
       id: 2,
@@ -98,6 +109,7 @@ const initialState: IState = {
       image: serviceImage2,
       description: [],
       layout: [],
+      galleryItems: [],
     },
     {
       id: 3,
@@ -105,6 +117,7 @@ const initialState: IState = {
       image: serviceImage3,
       description: [],
       layout: [],
+      galleryItems: [],
     },
   ],
   currentService: {
@@ -113,6 +126,7 @@ const initialState: IState = {
     image: "",
     description: [],
     layout: [],
+    galleryItems: [],
   },
   burgerIsOpen: false,
   contacts: {
