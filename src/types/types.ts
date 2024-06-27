@@ -5,12 +5,18 @@ export interface IDescription {
   text: string[];
 }
 
+export interface IGalleryItem {
+  id: number;
+  image: string;
+}
+
 export interface IService {
   id: number;
   title: string;
   image: string;
   description: IDescription[];
   layout: string[];
+  galleryItems: IGalleryItem[];
 }
 
 interface IContacts {
