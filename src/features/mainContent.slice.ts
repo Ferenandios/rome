@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import { IState } from "../types/MainPage/Content/types";
 
 const initialState: IState = {
-  title: "Наш ассортимент",
-  emptyServicesTitle: "Ассортимент отсутствует",
+  title: "Наши услуги",
+  emptyServicesTitle: "Услуги отсутствуют",
 };
 
 const mainContentSlice = createSlice({
