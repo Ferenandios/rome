@@ -9,7 +9,7 @@ const Button: FC = (): JSX.Element => {
   );
   const { colorTheme } = useAppSelector((state) => state.global);
   const { buttonText } = useAppSelector((state) => state.form);
-  const baseUrl = "http://31.128.41.148:8000";
+  const baseUrl = import.meta.env.VITE_REACT_APP_API_URL;
   const handleClick = async () => {
     const subject: string = `Письмо от ${text}`;
     const mailMessage: string = `
