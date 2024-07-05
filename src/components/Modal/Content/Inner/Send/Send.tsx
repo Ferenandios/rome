@@ -8,7 +8,9 @@ const Send: FC = (): JSX.Element => {
     <>
       <div className={styles.inner}>
         <Layout />
-        <Form layout="hidden" />
+        <div className="w-full">
+          <Form layout="hidden" />
+        </div>
       </div>
     </>
   );

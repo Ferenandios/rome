@@ -141,7 +141,7 @@ const initialState: IState = {
   isShowMessage: false,
   crumbs: [
     { id: 0, text: "Главная", link: "/" },
-    { id: 1, text: "Каталог оборудования", link: "/catalog" },
+    { id: 1, text: "Каталог услуг", link: "/catalog" },
     { id: 2, text: "Обратная связь", link: "/contacts" },
   ],
   submit: {

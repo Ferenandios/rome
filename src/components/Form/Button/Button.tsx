@@ -16,7 +16,8 @@ const Button: FC = (): JSX.Element => {
     Имя: ${text}
     Почта: ${email}
     Телефон: ${tel}
-    Комментарий: ${message}
+    Комментарий: 
+    ${message}
     `;
     const dataSend = {
       subject: subject,
