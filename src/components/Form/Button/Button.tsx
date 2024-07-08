@@ -23,11 +23,14 @@ const Button: FC = (): JSX.Element => {
       subject: subject,
       message: mailMessage,
     };
+    console.log("ФУНКЦИЯ СРАБОТАЛА!!!!");
 
     await axios
       .post(`${baseUrl}/email/sendEmail`, dataSend)
       // HANDLING ERRORS
       .then((res) => {
+        console.log("ПОЛУЧИЛИ ОШИБКУ!!!!!!!!!");
+
         console.log(res);
         if (res.status > 199 && res.status < 300) {
           alert("Send Successfully !");
