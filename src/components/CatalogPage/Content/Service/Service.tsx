@@ -1,8 +1,8 @@
 import { FC } from "react";
 import Bottom from "./Bottom/Bottom";
 import Line from "./Line/Line";
-import Top from "./Top/Top";
 import styles from "./Service.module.css";
+import Top from "./Top/Top";
 
 const Service: FC = (): JSX.Element => {
   return (
