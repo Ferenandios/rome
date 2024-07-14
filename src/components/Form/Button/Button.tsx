@@ -1,15 +1,26 @@
-import { FC } from "react";
-import { useAppSelector } from "../../../hooks";
-import styles from "./Button.module.css";
 import axios from "axios";
+import { FC } from "react";
+import { toggleIsShowModal } from "../../../features/global.slice";
+import { useAppDispatch, useAppSelector } from "../../../hooks";
+import styles from "./Button.module.css";
 
 const Button: FC = (): JSX.Element => {
+  const dispatch = useAppDispatch();
+  const { isShowModal } = useAppSelector((state) => state.global);
   const { text, email, tel, message } = useAppSelector(
     (state) => state.global.submit
   );
   const { colorTheme } = useAppSelector((state) => state.global);
   const { buttonText } = useAppSelector((state) => state.form);
   const baseUrl = import.meta.env.VITE_REACT_APP_API_URL;
+  // Notify client that mail has been sent
+  const closeModal = () => {
+    alert("Сообщение отправлено!");
+    if (isShowModal) {
+      dispatch(toggleIsShowModal());
+    }
+  };
+
   const handleClick = async () => {
     const subject: string = `Письмо от ${text}`;
     const mailMessage: string = `
@@ -23,7 +34,7 @@ const Button: FC = (): JSX.Element => {
       subject: subject,
       message: mailMessage,
     };
-
+    closeModal();
     await axios
       .post(`${baseUrl}/email/sendEmail`, dataSend)
       // HANDLING ERRORS
@@ -33,7 +44,6 @@ const Button: FC = (): JSX.Element => {
           alert("Send Successfully !");
         }
       });
-    alert("Сообщение отправлено!");
   };
   return (
     <>
