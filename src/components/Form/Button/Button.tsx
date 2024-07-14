@@ -33,6 +33,7 @@ const Button: FC = (): JSX.Element => {
           alert("Send Successfully !");
         }
       });
+    alert("Сообщение отправлено!");
   };
   return (
     <>
