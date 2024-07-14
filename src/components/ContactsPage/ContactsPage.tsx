@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import Crumbs from "../Crumbs/Crumbs";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -10,6 +10,9 @@ import styles from "./ContactsPage.module.css";
 
 const ContactsPage: FC = (): JSX.Element => {
   const { burgerIsOpen, isShowModal } = useAppSelector((state) => state.global);
+  useEffect(() => {
+    document.title = "Контакты";
+  });
   return (
     <>
       <main className={`${burgerIsOpen || isShowModal ? styles.inner : ""}`}>
