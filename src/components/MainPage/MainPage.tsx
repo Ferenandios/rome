@@ -7,7 +7,6 @@ import Message from "../Message/Message";
 import Crumbs from "../Crumbs/Crumbs";
 import Modal from "../Modal/Modal";
 import styles from "./MainPage.module.css";
-import DocumentMeta from "react-document-meta";
 
 const MainPage: FC = (): JSX.Element => {
   const { burgerIsOpen, isShowModal } = useAppSelector((state) => state.global);
