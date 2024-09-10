@@ -12,7 +12,8 @@ const MainPage: FC = (): JSX.Element => {
   const { burgerIsOpen, isShowModal } = useAppSelector((state) => state.global);
   useEffect(() => {
     // Changing Page title by service.title
-    document.title = "Услуги";
+    document.title =
+      'ООО "РЕМИКС" - Ваш надежный партнер в Нижневартовске | Услуги компании';
   });
   return (
     <>
