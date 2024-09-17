@@ -1,6 +1,10 @@
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import MainPage from "./components/MainPage/MainPage.tsx";
 import "./index.css";
 import { store } from "./store/store.ts";
@@ -13,7 +17,8 @@ const router = createBrowserRouter([
   { path: "/catalog", element: <MainPage /> },
   { path: "/catalog/:itemId/", element: <CatalogPage /> },
   { path: "/contacts", element: <ContactsPage /> },
-  { path: "*", element: <PageNotFound /> },
+  { path: "/404", element: <PageNotFound /> },
+  { path: "*", element: <Navigate to="/404" /> },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
