@@ -17,6 +17,7 @@ export interface IService {
   description: IDescription[];
   layout: string[];
   galleryItems: IGalleryItem[];
+  keywords: string;
 }
 
 interface IContacts {
