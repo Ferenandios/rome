@@ -9,21 +9,38 @@ import Crumbs from "../Crumbs/Crumbs";
 import Message from "../Message/Message";
 import Modal from "../Modal/Modal";
 import styles from "./CatalogPage.module.css";
+import { Helmet } from "react-helmet";
 
 const CatalogPage: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
   const { itemId } = useParams();
-  const { services, burgerIsOpen, isShowModal, currentService } =
+  const { services, burgerIsOpen, isShowModal, currentService, companyName } =
     useAppSelector((state) => state.global);
   const service =
     itemId !== undefined && !isNaN(+itemId) ? services[+itemId] : null;
+  const year: number = new Date().getFullYear();
   useEffect(() => {
     service && dispatch(setCurrentService(service));
-    // Changing Page title by service.title
-    document.title = currentService.title;
   }, [dispatch, service, currentService]);
   return (
     <>
+      <Helmet
+        title={`${currentService.title} - ${companyName}`}
+        meta={[
+          {
+            name: "title",
+            content: `${currentService.title} в Нижневартовске - ${companyName}`,
+          },
+          {
+            name: "description",
+            content: `${currentService.title} в Нижневартовске более 5 лет. Только качественные материалалы. Цены от 5 000 рублей. Работаем в ${year} году!`,
+          },
+          {
+            name: "keywords",
+            content: currentService.keywords,
+          },
+        ]}
+      />
       <main className={`${burgerIsOpen || isShowModal ? styles.inner : ""}`}>
         <Header />
         <Crumbs />
