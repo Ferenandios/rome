@@ -15,7 +15,7 @@ const Service: FC<{ service: IService }> = ({ service }): JSX.Element => {
       <div className={styles.inner}>
         <Link
           onClick={handleClick}
-          to={`/rome/catalog/${service.id}`}
+          to={`/catalog/${service.id}`}
           className={styles.title}
         >
           {service.title}
