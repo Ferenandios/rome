@@ -7,7 +7,7 @@ const Address: FC = (): JSX.Element => {
   return (
     <>
       <div className={styles.ansoc}>
-        <span className={styles.text}>{companyAddress}</span>
+        <h1 className={styles.text}>{companyAddress}</h1>
       </div>
     </>
   );
