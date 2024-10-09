@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: */404
-Disallow: */catalog
-Allow: */catalog/*
-Allow: */contacts
